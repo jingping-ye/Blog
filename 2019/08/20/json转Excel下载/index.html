@@ -1,0 +1,917 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next mist use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="Hexo, NexT" />
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="将 json 转为 excel 表并下载背景通过访问接口，获取 json 数据，将 json 转为 excel 表并下载。 工具 react js-xlsx  步骤安装 jsx-xlsx 包1npm i js-xlsx -S  引入1const XLSX &#x3D; require(&quot;xlsx&quot;);  实现效果假设我们从后端返回的数据如下: 12345678910111213141516171819202">
+<meta property="og:type" content="article">
+<meta property="og:title" content="json转Excel下载">
+<meta property="og:url" content="http://yoursite.com/2019/08/20/json%E8%BD%ACExcel%E4%B8%8B%E8%BD%BD/index.html">
+<meta property="og:site_name" content="jingping.ye">
+<meta property="og:description" content="将 json 转为 excel 表并下载背景通过访问接口，获取 json 数据，将 json 转为 excel 表并下载。 工具 react js-xlsx  步骤安装 jsx-xlsx 包1npm i js-xlsx -S  引入1const XLSX &#x3D; require(&quot;xlsx&quot;);  实现效果假设我们从后端返回的数据如下: 12345678910111213141516171819202">
+<meta property="og:image" content="http://ytju2r.coding-pages.com/%E5%8E%9F%E5%A7%8B%E8%A1%A8%E6%A0%BC.png">
+<meta property="og:image" content="http://ytju2r.coding-pages.com/%E5%90%88%E5%B9%B6%E5%90%8E%E6%95%88%E6%9E%9C.png">
+<meta property="article:published_time" content="2019-08-20T07:07:00.000Z">
+<meta property="article:modified_time" content="2020-05-14T05:53:53.146Z">
+<meta property="article:author" content="jingping.ye">
+<meta property="article:tag" content="jingping.ye">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://ytju2r.coding-pages.com/%E5%8E%9F%E5%A7%8B%E8%A1%A8%E6%A0%BC.png">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Mist',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":true,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2019/08/20/json转Excel下载/"/>
+
+
+
+
+
+  <title>json转Excel下载 | jingping.ye</title>
+  
+
+
+
+
+
+
+
+
+<meta name="generator" content="Hexo 4.2.0"></head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">jingping.ye</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">jingping.ye的Blog</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-question-circle"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-question-circle"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-question-circle"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-question-circle"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/08/20/json%E8%BD%ACExcel%E4%B8%8B%E8%BD%BD/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="jingping.ye">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="jingping.ye">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">json转Excel下载</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-08-20T15:07:00+08:00">
+                2019-08-20
+              </time>
+            
+
+            
+              <span class="post-meta-divider">|</span>
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-check-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">更新于&#58;</span>
+              
+              <time title="更新于" itemprop="dateModified" datetime="2020-05-14T13:53:53+08:00">
+                2020-05-14
+              </time>
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  2k
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  9
+                </span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h1 id="将-json-转为-excel-表并下载"><a href="#将-json-转为-excel-表并下载" class="headerlink" title="将 json 转为 excel 表并下载"></a>将 json 转为 excel 表并下载</h1><h2 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h2><p>通过访问接口，获取 json 数据，将 json 转为 excel 表并下载。</p>
+<h2 id="工具"><a href="#工具" class="headerlink" title="工具"></a>工具</h2><ul>
+<li>react</li>
+<li>js-xlsx</li>
+</ul>
+<h2 id="步骤"><a href="#步骤" class="headerlink" title="步骤"></a>步骤</h2><h3 id="安装-jsx-xlsx-包"><a href="#安装-jsx-xlsx-包" class="headerlink" title="安装 jsx-xlsx 包"></a>安装 jsx-xlsx 包</h3><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm i js-xlsx -S</span><br></pre></td></tr></table></figure>
+
+<h3 id="引入"><a href="#引入" class="headerlink" title="引入"></a>引入</h3><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> XLSX = <span class="built_in">require</span>(<span class="string">"xlsx"</span>);</span><br></pre></td></tr></table></figure>
+
+<h3 id="实现效果"><a href="#实现效果" class="headerlink" title="实现效果"></a>实现效果</h3><p>假设我们从后端返回的数据如下:</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br></pre></td><td class="code"><pre><span class="line">student: [</span><br><span class="line">  &#123;</span><br><span class="line">    id: <span class="number">1</span>,</span><br><span class="line">    stuNo: <span class="number">20190801</span>,</span><br><span class="line">    name: <span class="string">"王二二"</span>,</span><br><span class="line">    age: <span class="number">21</span>,</span><br><span class="line">    major: <span class="string">"计算机科学与技术"</span>,</span><br><span class="line">    isParty: <span class="number">1</span>,</span><br><span class="line">    sex: <span class="number">0</span>,</span><br><span class="line">  &#125;,</span><br><span class="line">  &#123;</span><br><span class="line">    id: <span class="number">2</span>,</span><br><span class="line">    stuNo: <span class="number">20190802</span>,</span><br><span class="line">    name: <span class="string">"李冬梅"</span>,</span><br><span class="line">    age: <span class="number">20</span>,</span><br><span class="line">    major: <span class="string">"计算机科学与技术"</span>,</span><br><span class="line">    isParty: <span class="number">0</span>,</span><br><span class="line">    sex: <span class="number">1</span>,</span><br><span class="line">  &#125;,</span><br><span class="line">  &#123;</span><br><span class="line">    id: <span class="number">3</span>,</span><br><span class="line">    stuNo: <span class="number">20190803</span>,</span><br><span class="line">    name: <span class="string">"张晓芳"</span>,</span><br><span class="line">    age: <span class="number">21</span>,</span><br><span class="line">    major: <span class="string">"汉语言文学"</span>,</span><br><span class="line">    isParty: <span class="number">1</span>,</span><br><span class="line">    sex: <span class="number">1</span>,</span><br><span class="line">  &#125;,</span><br><span class="line">  &#123;</span><br><span class="line">    id: <span class="number">4</span>,</span><br><span class="line">    stuNo: <span class="number">20190804</span>,</span><br><span class="line">    name: <span class="string">"张雨"</span>,</span><br><span class="line">    age: <span class="number">24</span>,</span><br><span class="line">    major: <span class="string">"汉语言文学"</span>,</span><br><span class="line">    isParty: <span class="number">1</span>,</span><br><span class="line">    sex: <span class="number">0</span>,</span><br><span class="line">  &#125;,</span><br><span class="line">  &#123;</span><br><span class="line">    id: <span class="number">5</span>,</span><br><span class="line">    stuNo: <span class="number">20190805</span>,</span><br><span class="line">    name: <span class="string">"张子豪"</span>,</span><br><span class="line">    age: <span class="number">22</span>,</span><br><span class="line">    major: <span class="string">"通信工程"</span>,</span><br><span class="line">    isParty: <span class="number">0</span>,</span><br><span class="line">    sex: <span class="number">0</span>,</span><br><span class="line">  &#125;,</span><br><span class="line">];</span><br></pre></td></tr></table></figure>
+
+<h4 id="数据含义说明"><a href="#数据含义说明" class="headerlink" title="数据含义说明"></a>数据含义说明</h4><table>
+<thead>
+<tr>
+<th>属性名称</th>
+<th>中文含义</th>
+<th>备注</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>id</td>
+<td>id</td>
+<td></td>
+</tr>
+<tr>
+<td>stuNo</td>
+<td>学号</td>
+<td>8 位</td>
+</tr>
+<tr>
+<td>name</td>
+<td>名字</td>
+<td></td>
+</tr>
+<tr>
+<td>age</td>
+<td>年龄</td>
+<td></td>
+</tr>
+<tr>
+<td>major</td>
+<td>专业</td>
+<td></td>
+</tr>
+<tr>
+<td>isParty</td>
+<td>是否是党员</td>
+<td>否:0,是:1</td>
+</tr>
+<tr>
+<td>sex</td>
+<td>性别</td>
+<td>男:0, 女:1</td>
+</tr>
+</tbody></table>
+<p>最终想要实现的效果如下:</p>
+<p><img src="http://ytju2r.coding-pages.com/%E5%8E%9F%E5%A7%8B%E8%A1%A8%E6%A0%BC.png" alt="实现效果"></p>
+<h3 id="实现思路"><a href="#实现思路" class="headerlink" title="实现思路"></a>实现思路</h3><p>因为 js-xlsx 对应的数据组合如下:</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">[</span><br><span class="line">    [<span class="string">'行1列1(表头)'</span>,<span class="string">'行1列1(表头2)'</span>,<span class="string">'行1列1(表3)'</span>],</span><br><span class="line">    [<span class="string">'行2列1'</span>,<span class="string">'行2列2'</span>,<span class="string">'行2列3'</span>],</span><br><span class="line">    [<span class="string">'行3列1'</span>,<span class="string">'行3列2'</span>,<span class="string">'行3列3'</span>]</span><br><span class="line">    .....</span><br><span class="line">]</span><br></pre></td></tr></table></figure>
+
+<p>所以我们需要将数据进行组合</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//	置换数据，将是否党员的0和1换成是和否;将性别中的0和1换成'男'和'女'</span></span><br><span class="line">assembleStudentData(data) &#123;</span><br><span class="line">    data = <span class="built_in">JSON</span>.parse(<span class="built_in">JSON</span>.stringify(data));</span><br><span class="line">    <span class="keyword">return</span> data.map(<span class="function"><span class="keyword">function</span>(<span class="params">item</span>) </span>&#123;</span><br><span class="line">        item.isParty = item.isParty === <span class="number">0</span> ? <span class="string">'否'</span> : <span class="string">'是'</span>;</span><br><span class="line">        item.sex = item.sex === <span class="number">0</span> ? <span class="string">'男'</span> : <span class="string">'女'</span>;</span><br><span class="line">        <span class="keyword">return</span> item;</span><br><span class="line">        &#125;);</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//	转换数据的格式</span></span><br><span class="line">transferTableData(arr) &#123;</span><br><span class="line">  <span class="keyword">const</span> tableData = arr.map(<span class="function"><span class="keyword">function</span>(<span class="params">obj, arrIndex</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">const</span> row = [];</span><br><span class="line">    <span class="built_in">Object</span>.keys(obj).forEach(<span class="function"><span class="keyword">function</span>(<span class="params">key</span>) </span>&#123;</span><br><span class="line">      row.push(obj[key]);</span><br><span class="line">    &#125;);</span><br><span class="line">    <span class="keyword">return</span> row;</span><br><span class="line">  &#125;);</span><br><span class="line">  <span class="keyword">return</span> tableData;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>组合之后，使用 xlxs 转换为 excel 表并提供下载即可。</p>
+<h2 id="合并单元格"><a href="#合并单元格" class="headerlink" title="合并单元格"></a>合并单元格</h2><blockquote>
+<p>只涉及列合并</p>
+</blockquote>
+<p>如果我们想将上下相邻且单元格合并，那么需要操作 sheet[‘!merges’]属性。</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">!merges :[</span><br><span class="line">    		&#123; <span class="attr">s</span>: &#123; <span class="attr">r</span>: <span class="number">-1</span>, <span class="attr">c</span>: <span class="number">-1</span> &#125;, <span class="attr">e</span>: &#123; <span class="attr">r</span>: <span class="number">-1</span>, <span class="attr">c</span>: <span class="number">-1</span> &#125; &#125;,</span><br><span class="line">          	&#123; <span class="attr">s</span>: &#123; <span class="attr">r</span>: <span class="number">-1</span>, <span class="attr">c</span>: <span class="number">-1</span> &#125;, <span class="attr">e</span>: &#123; <span class="attr">r</span>: <span class="number">-1</span>, <span class="attr">c</span>: <span class="number">-1</span> &#125; &#125;</span><br><span class="line">          ];</span><br></pre></td></tr></table></figure>
+
+<p>!merges 属性说明</p>
+<ul>
+<li><p>s: start 开始位置</p>
+</li>
+<li><p>r: row 行</p>
+</li>
+<li><p>c: column 列</p>
+</li>
+</ul>
+<p>!merges 中的每一个元素表示的是合并的位置。合并的位置由两部分组成，一部分是合并开始的位置{s:{r:-1,c:-1}};</p>
+<p>另一部分是合并结束的位置{e:{r:-1,c:-1}}。如假如有一组元素 <code>[{s:{r:1,c:1}},{e:{r:3,c:1}}]</code>表示的是合并第二列、第二行至第四行的数据</p>
+<p>首先经过转换，我们的数据应该如下，拿到这个数组。</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">[</span><br><span class="line">  [<span class="number">1</span>, <span class="number">20190801</span>, <span class="string">"王二二"</span>, <span class="number">21</span>, <span class="string">"计算机科学与技术"</span>, <span class="string">"是"</span>, <span class="string">"男"</span>],</span><br><span class="line">  [<span class="number">2</span>, <span class="number">20190802</span>, <span class="string">"李冬梅"</span>, <span class="number">20</span>, <span class="string">"计算机科学与技术"</span>, <span class="string">"否"</span>, <span class="string">"女"</span>],</span><br><span class="line">  [<span class="number">3</span>, <span class="number">20190803</span>, <span class="string">"张晓芳"</span>, <span class="number">21</span>, <span class="string">"汉语言文学"</span>, <span class="string">"是"</span>, <span class="string">"女"</span>],</span><br><span class="line">  [<span class="number">4</span>, <span class="number">20190804</span>, <span class="string">"张雨"</span>, <span class="number">24</span>, <span class="string">"汉语言文学"</span>, <span class="string">"是"</span>, <span class="string">"男"</span>],</span><br><span class="line">  [<span class="number">5</span>, <span class="number">20190805</span>, <span class="string">"张子豪"</span>, <span class="number">22</span>, <span class="string">"通信工程"</span>, <span class="string">"否"</span>, <span class="string">"男"</span>],</span><br><span class="line">];</span><br></pre></td></tr></table></figure>
+
+<p>找出上下相邻并相等的数据，记录下来</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * Note:记录数组中上下相等且连续的元素开始位置和结束位置</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param <span class="type">&#123;array&#125;</span> </span>data 用来记录的数组</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@return <span class="type">&#123;array&#125;</span> </span>allPos 所有记录的位置</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@note </span>循环数组，循环数组的每一行元素，如果当前行的元素与下一行的元素相等，那么将其记录加一；如果不相等*    并且存在记录，那么将该纪录弹出，存入所有位置数组中。</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@note </span>弹出时位置的计算方法 列 = 当前元素所在列 开始行 = 当前元素所在行 - 记录中的数 结束行=当前行</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@note </span>所有记录默认为0</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line">getMergeData(data) &#123;</span><br><span class="line">  <span class="keyword">let</span> sameValue = data[<span class="number">0</span>].map(<span class="function"><span class="keyword">function</span>(<span class="params">item</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">  &#125;);</span><br><span class="line">  <span class="keyword">let</span> allPos = [];</span><br><span class="line">  <span class="keyword">let</span> pos = &#123; <span class="attr">s</span>: &#123; <span class="attr">r</span>: <span class="number">-1</span>, <span class="attr">c</span>: <span class="number">-1</span> &#125;, <span class="attr">e</span>: &#123; <span class="attr">r</span>: <span class="number">-1</span>, <span class="attr">c</span>: <span class="number">-1</span> &#125; &#125;;</span><br><span class="line">  <span class="keyword">for</span> (<span class="keyword">let</span> i = <span class="number">0</span>; i &lt; data.length; i++) &#123;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">let</span> j = <span class="number">0</span>; j &lt; data[i].length; j++) &#123;</span><br><span class="line">      <span class="keyword">if</span> (i &lt; data.length - <span class="number">1</span> &amp;&amp; data[i][j] === data[i + <span class="number">1</span>][j]) &#123;</span><br><span class="line">        sameValue[j] = sameValue[j] + <span class="number">1</span>;</span><br><span class="line">      &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">        <span class="keyword">if</span> (sameValue[j] !== <span class="number">0</span>) &#123;</span><br><span class="line">          pos[<span class="string">'s'</span>][<span class="string">'c'</span>] = j;</span><br><span class="line">          pos[<span class="string">'e'</span>][<span class="string">'c'</span>] = j;</span><br><span class="line">          pos[<span class="string">'s'</span>][<span class="string">'r'</span>] = i - sameValue[j];</span><br><span class="line">          pos[<span class="string">'e'</span>][<span class="string">'r'</span>] = i;</span><br><span class="line">          <span class="keyword">const</span> samePos = <span class="built_in">JSON</span>.parse(<span class="built_in">JSON</span>.stringify(pos));</span><br><span class="line">          allPos.push(samePos);</span><br><span class="line">          sameValue[j] = <span class="number">0</span>;</span><br><span class="line">        &#125;</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">return</span> allPos;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>给工作表加上!merge 属性</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> merges = <span class="keyword">this</span>.getMergeData(studentTable);</span><br><span class="line"><span class="keyword">if</span> (!sheet[<span class="string">"!merges"</span>]) &#123;</span><br><span class="line">  sheet[<span class="string">"!merges"</span>] = [];</span><br><span class="line">&#125;</span><br><span class="line">sheet[<span class="string">"!merges"</span>] = merges;</span><br></pre></td></tr></table></figure>
+
+<p>合并效果：</p>
+<p><img src="http://ytju2r.coding-pages.com/%E5%90%88%E5%B9%B6%E5%90%8E%E6%95%88%E6%9E%9C.png" alt="合并后表格"></p>
+<h3 id="全部代码"><a href="#全部代码" class="headerlink" title="全部代码"></a>全部代码</h3><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br><span class="line">144</span><br><span class="line">145</span><br><span class="line">146</span><br><span class="line">147</span><br><span class="line">148</span><br><span class="line">149</span><br><span class="line">150</span><br><span class="line">151</span><br><span class="line">152</span><br><span class="line">153</span><br><span class="line">154</span><br><span class="line">155</span><br><span class="line">156</span><br><span class="line">157</span><br><span class="line">158</span><br><span class="line">159</span><br><span class="line">160</span><br><span class="line">161</span><br><span class="line">162</span><br><span class="line">163</span><br><span class="line">164</span><br><span class="line">165</span><br><span class="line">166</span><br><span class="line">167</span><br><span class="line">168</span><br><span class="line">169</span><br><span class="line">170</span><br><span class="line">171</span><br><span class="line">172</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">constructor</span>(props) &#123;</span><br><span class="line">  <span class="keyword">super</span>(props);</span><br><span class="line">  <span class="keyword">this</span>.exportExcel = <span class="keyword">this</span>.exportExcel.bind(<span class="keyword">this</span>);</span><br><span class="line">  <span class="keyword">this</span>.state = &#123;</span><br><span class="line">    student: [</span><br><span class="line">      &#123;</span><br><span class="line">        id: <span class="number">1</span>,</span><br><span class="line">        stuNo: <span class="number">20190801</span>,</span><br><span class="line">        name: <span class="string">'王二二'</span>,</span><br><span class="line">        age: <span class="number">21</span>,</span><br><span class="line">        major: <span class="string">'计算机科学与技术'</span>,</span><br><span class="line">        isParty: <span class="number">1</span>,</span><br><span class="line">        sex: <span class="number">0</span></span><br><span class="line">      &#125;,</span><br><span class="line">      &#123;</span><br><span class="line">        id: <span class="number">2</span>,</span><br><span class="line">        stuNo: <span class="number">20190802</span>,</span><br><span class="line">        name: <span class="string">'李冬梅'</span>,</span><br><span class="line">        age: <span class="number">20</span>,</span><br><span class="line">        major: <span class="string">'计算机科学与技术'</span>,</span><br><span class="line">        isParty: <span class="number">0</span>,</span><br><span class="line">        sex: <span class="number">1</span></span><br><span class="line">      &#125;,</span><br><span class="line">      &#123;</span><br><span class="line">        id: <span class="number">3</span>,</span><br><span class="line">        stuNo: <span class="number">20190803</span>,</span><br><span class="line">        name: <span class="string">'张晓芳'</span>,</span><br><span class="line">        age: <span class="number">21</span>,</span><br><span class="line">        major: <span class="string">'汉语言文学'</span>,</span><br><span class="line">        isParty: <span class="number">1</span>,</span><br><span class="line">        sex: <span class="number">1</span></span><br><span class="line">      &#125;,</span><br><span class="line">      &#123;</span><br><span class="line">        id: <span class="number">4</span>,</span><br><span class="line">        stuNo: <span class="number">20190804</span>,</span><br><span class="line">        name: <span class="string">'张雨'</span>,</span><br><span class="line">        age: <span class="number">24</span>,</span><br><span class="line">        major: <span class="string">'汉语言文学'</span>,</span><br><span class="line">        isParty: <span class="number">1</span>,</span><br><span class="line">        sex: <span class="number">0</span></span><br><span class="line">      &#125;,</span><br><span class="line">      &#123;</span><br><span class="line">        id: <span class="number">5</span>,</span><br><span class="line">        stuNo: <span class="number">20190805</span>,</span><br><span class="line">        name: <span class="string">'张子豪'</span>,</span><br><span class="line">        age: <span class="number">22</span>,</span><br><span class="line">        major: <span class="string">'通信工程'</span>,</span><br><span class="line">        isParty: <span class="number">0</span>,</span><br><span class="line">        sex: <span class="number">0</span></span><br><span class="line">      &#125;</span><br><span class="line">    ]</span><br><span class="line">  &#125;;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">render() &#123;</span><br><span class="line">  <span class="keyword">return</span> (</span><br><span class="line">    &lt;div&gt;</span><br><span class="line">      &lt;button onClick=&#123;<span class="keyword">this</span>.exportExcel&#125;&gt;导出表格&lt;<span class="regexp">/button&gt;</span></span><br><span class="line"><span class="regexp">    &lt;/</span>div&gt;</span><br><span class="line">  );</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//  组合student数据</span></span><br><span class="line">assembleStudentData(data) &#123;</span><br><span class="line">  data = <span class="built_in">JSON</span>.parse(<span class="built_in">JSON</span>.stringify(data));</span><br><span class="line">  <span class="keyword">return</span> data.map(<span class="function"><span class="keyword">function</span>(<span class="params">item</span>) </span>&#123;</span><br><span class="line">    item.isParty = item.isParty === <span class="number">0</span> ? <span class="string">'否'</span> : <span class="string">'是'</span>;</span><br><span class="line">    item.sex = item.sex === <span class="number">0</span> ? <span class="string">'男'</span> : <span class="string">'女'</span>;</span><br><span class="line">    <span class="keyword">return</span> item;</span><br><span class="line">  &#125;);</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//  导出excel</span></span><br><span class="line">exportExcel() &#123;</span><br><span class="line">  <span class="keyword">const</span> student = <span class="keyword">this</span>.assembleStudentData(<span class="keyword">this</span>.state.student);</span><br><span class="line">  <span class="keyword">let</span> studentTable = <span class="keyword">this</span>.transferTableData(student);</span><br><span class="line">  studentTable.unshift([<span class="string">'#'</span>, <span class="string">'Id'</span>, <span class="string">'姓名'</span>, <span class="string">'年龄'</span>, <span class="string">'专业'</span>, <span class="string">'是否党员'</span>, <span class="string">'性别'</span>]);</span><br><span class="line">  <span class="keyword">const</span> sheet = XLSX.utils.aoa_to_sheet(studentTable);</span><br><span class="line">  <span class="keyword">let</span> merges = <span class="keyword">this</span>.getMergeData(studentTable);</span><br><span class="line">  <span class="keyword">if</span> (!sheet[<span class="string">'!merges'</span>]) &#123;</span><br><span class="line">    sheet[<span class="string">'!merges'</span>] = [];</span><br><span class="line">  &#125;</span><br><span class="line">  sheet[<span class="string">'!merges'</span>] = merges;</span><br><span class="line">  <span class="keyword">this</span>.openDownloadDialog(<span class="keyword">this</span>.sheet2blob(sheet), <span class="string">'student.xlsx'</span>);</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * Note:记录数组中上下相等且连续的元素开始位置和结束位置</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param <span class="type">&#123;array&#125;</span> </span>data 用来记录的数组</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param <span class="type">&#123;boolean&#125;</span> </span>needHeader 是否需要表头（如果需要表头，弹出时将记录中所有元素的行数加一，防止表头与第一行内容相同的情况）</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@return <span class="type">&#123;array&#125;</span> </span>allPos 所有记录的位置</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@note </span>循环数组，循环数组的每一行元素，如果当前行的元素与下一行的元素相等，那么将其记录加一；如果不相等并且存在记录，那么将该纪录弹         出，存入所有位置数组中。</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@note </span>弹出时位置的计算方法 列 = 当前元素所在列 开始行 = 当前元素所在行 - 记录中的数 结束行=当前行</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@note </span>所有记录默认为0</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line">getMergeData(data) &#123;</span><br><span class="line">  <span class="keyword">let</span> sameValue = data[<span class="number">0</span>].map(<span class="function"><span class="keyword">function</span>(<span class="params">item</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">  &#125;);</span><br><span class="line">  <span class="keyword">let</span> allPos = [];</span><br><span class="line">  <span class="keyword">let</span> pos = &#123; <span class="attr">s</span>: &#123; <span class="attr">r</span>: <span class="number">-1</span>, <span class="attr">c</span>: <span class="number">-1</span> &#125;, <span class="attr">e</span>: &#123; <span class="attr">r</span>: <span class="number">-1</span>, <span class="attr">c</span>: <span class="number">-1</span> &#125; &#125;;</span><br><span class="line">  <span class="keyword">for</span> (<span class="keyword">let</span> i = <span class="number">0</span>; i &lt; data.length; i++) &#123;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">let</span> j = <span class="number">0</span>; j &lt; data[i].length; j++) &#123;</span><br><span class="line">      <span class="keyword">if</span> (i &lt; data.length - <span class="number">1</span> &amp;&amp; data[i][j] === data[i + <span class="number">1</span>][j]) &#123;</span><br><span class="line">        sameValue[j] = sameValue[j] + <span class="number">1</span>;</span><br><span class="line">      &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">        <span class="keyword">if</span> (sameValue[j] !== <span class="number">0</span>) &#123;</span><br><span class="line">          pos[<span class="string">'s'</span>][<span class="string">'c'</span>] = j;</span><br><span class="line">          pos[<span class="string">'e'</span>][<span class="string">'c'</span>] = j;</span><br><span class="line">          pos[<span class="string">'s'</span>][<span class="string">'r'</span>] = i - sameValue[j];</span><br><span class="line">          pos[<span class="string">'e'</span>][<span class="string">'r'</span>] = i;</span><br><span class="line">          <span class="keyword">const</span> samePos = <span class="built_in">JSON</span>.parse(<span class="built_in">JSON</span>.stringify(pos));</span><br><span class="line">          allPos.push(samePos);</span><br><span class="line">          sameValue[j] = <span class="number">0</span>;</span><br><span class="line">        &#125;</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">return</span> allPos;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//	转换数据</span></span><br><span class="line">transferTableData(arr) &#123;</span><br><span class="line">  <span class="keyword">const</span> tableData = arr.map(<span class="function"><span class="keyword">function</span>(<span class="params">obj, arrIndex</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">const</span> row = [];</span><br><span class="line">    <span class="built_in">Object</span>.keys(obj).forEach(<span class="function"><span class="keyword">function</span>(<span class="params">key</span>) </span>&#123;</span><br><span class="line">      row.push(obj[key]);</span><br><span class="line">    &#125;);</span><br><span class="line">    <span class="keyword">return</span> row;</span><br><span class="line">  &#125;);</span><br><span class="line">  <span class="keyword">return</span> tableData;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//	打开下载对话框</span></span><br><span class="line">openDownloadDialog(url, saveName) &#123;</span><br><span class="line">  <span class="keyword">if</span> (<span class="keyword">typeof</span> url == <span class="string">'object'</span> &amp;&amp; url <span class="keyword">instanceof</span> Blob) &#123;</span><br><span class="line">    url = URL.createObjectURL(url);</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">var</span> aLink = <span class="built_in">document</span>.createElement(<span class="string">'a'</span>);</span><br><span class="line">  aLink.href = url;</span><br><span class="line">  aLink.download = saveName || <span class="string">''</span>;</span><br><span class="line">  <span class="keyword">var</span> event;</span><br><span class="line">  <span class="keyword">if</span> (<span class="built_in">window</span>.MouseEvent) event = <span class="keyword">new</span> MouseEvent(<span class="string">'click'</span>);</span><br><span class="line">  <span class="keyword">else</span> &#123;</span><br><span class="line">    event = <span class="built_in">document</span>.createEvent(<span class="string">'MouseEvents'</span>);</span><br><span class="line">    event.initMouseEvent(<span class="string">'click'</span>, <span class="literal">true</span>, <span class="literal">false</span>, <span class="built_in">window</span>, <span class="number">0</span>, <span class="number">0</span>, <span class="number">0</span>, <span class="number">0</span>, <span class="number">0</span>, <span class="literal">false</span>, <span class="literal">false</span>, <span class="literal">false</span>, <span class="literal">false</span>, <span class="number">0</span>, <span class="literal">null</span>);</span><br><span class="line">  &#125;</span><br><span class="line">  aLink.dispatchEvent(event);</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// 将workbook装化成blob对象</span></span><br><span class="line">sheet2blob(sheet, sheetName) &#123;</span><br><span class="line">  sheetName = sheetName || <span class="string">'sheet1'</span>;</span><br><span class="line">  <span class="keyword">var</span> workbook = &#123;</span><br><span class="line">    SheetNames: [sheetName],</span><br><span class="line">    Sheets: &#123;&#125;</span><br><span class="line">  &#125;;</span><br><span class="line">  workbook.Sheets[sheetName] = sheet;</span><br><span class="line">  <span class="comment">// 生成excel的配置项</span></span><br><span class="line">  <span class="keyword">var</span> wopts = &#123;</span><br><span class="line">    bookType: <span class="string">'xlsx'</span>, <span class="comment">// 要生成的文件类型</span></span><br><span class="line">    bookSST: <span class="literal">false</span>, <span class="comment">// 是否生成Shared String Table，官方解释是，如果开启生成速度会下降，但在低版本IOS设备上有更好的兼容性</span></span><br><span class="line">    type: <span class="string">'binary'</span></span><br><span class="line">  &#125;;</span><br><span class="line">  <span class="keyword">var</span> wbout = XLSX.write(workbook, wopts);</span><br><span class="line">  <span class="keyword">var</span> blob = <span class="keyword">new</span> Blob([s2ab(wbout)], &#123; <span class="attr">type</span>: <span class="string">'application/octet-stream'</span> &#125;);</span><br><span class="line">  <span class="comment">// 字符串转ArrayBuffer</span></span><br><span class="line">  <span class="function"><span class="keyword">function</span> <span class="title">s2ab</span>(<span class="params">s</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">var</span> buf = <span class="keyword">new</span> <span class="built_in">ArrayBuffer</span>(s.length);</span><br><span class="line">    <span class="keyword">var</span> view = <span class="keyword">new</span> <span class="built_in">Uint8Array</span>(buf);</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">var</span> i = <span class="number">0</span>; i != s.length; ++i) view[i] = s.charCodeAt(i) &amp; <span class="number">0xff</span>;</span><br><span class="line">    <span class="keyword">return</span> buf;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">return</span> blob;</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">const</span> app = <span class="built_in">document</span>.getElementById(<span class="string">'app'</span>);</span><br><span class="line">ReactDOM.render(<span class="xml"><span class="tag">&lt;<span class="name">Page</span> /&gt;</span></span>, app);</span><br></pre></td></tr></table></figure>
+
+<h2 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h2><p>将 json 数据转为字符串，最后组合成 csv 文件下载。</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> data = <span class="string">"..."</span>; <span class="comment">// 这里填CSV内容的字符串</span></span><br><span class="line"><span class="keyword">const</span> blob = <span class="keyword">new</span> Blob([data], &#123; <span class="attr">type</span>: <span class="string">"text/plain"</span> &#125;);</span><br><span class="line"><span class="keyword">const</span> link = <span class="built_in">document</span>.createElement(<span class="string">"a"</span>);</span><br><span class="line">link.href = URL.createObjectURL(blob);</span><br><span class="line">link.download = <span class="string">"filename.csv"</span>; <span class="comment">// 这里填保存成的文件名</span></span><br><span class="line">link.click();</span><br><span class="line">URL.revokeObjectURL(link.href);</span><br></pre></td></tr></table></figure>
+
+<h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><p><a href="https://github.com/SheetJS/js-xlsx" target="_blank" rel="noopener">SheetJS/js-xlsx: SheetJS Community Edition – Spreadsheet Toolkit</a></p>
+<p><a href="http://blog.haoji.me/js-excel.html" target="_blank" rel="noopener">如何使用 JavaScript 实现纯前端读取和导出 excel 文件-好记的博客如何使用 JavaScript 实现纯前端读取和导出 excel 文件-好记的博客</a></p>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2019/06/16/ES6%E4%B8%AD%E7%B1%BB%E7%9A%84%E7%A7%81%E6%9C%89%E6%96%B9%E6%B3%95/" rel="next" title="ES6中类的私有方法">
+                <i class="fa fa-chevron-left"></i> ES6中类的私有方法
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2019/09/14/%E4%BD%BF%E7%94%A8Fiddler%E6%8A%93%E5%8F%96%E5%BE%AE%E4%BF%A1%E9%A5%BF%E4%BA%86%E4%B9%88%E5%B0%8F%E7%A8%8B%E5%BA%8F%E6%95%B0%E6%8D%AE/" rel="prev" title="使用Fiddler抓取微信饿了么小程序数据">
+                使用Fiddler抓取微信饿了么小程序数据 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <p class="site-author-name" itemprop="name">jingping.ye</p>
+              <p class="site-description motion-element" itemprop="description">jingping.ye的Blog|文章</p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">19</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">7</span>
+                  <span class="site-state-item-name">分类</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">22</span>
+                  <span class="site-state-item-name">标签</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
+          
+
+          
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="https://github.com/yourname" target="_blank" title="GitHub">
+                      
+                        <i class="fa fa-fw fa-github"></i>GitHub</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="mailto:yourname@gmail.com" target="_blank" title="E-Mail">
+                      
+                        <i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="https://plus.google.com/yourname" target="_blank" title="Google">
+                      
+                        <i class="fa fa-fw fa-google"></i>Google</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="https://twitter.com/yourname" target="_blank" title="Twitter">
+                      
+                        <i class="fa fa-fw fa-twitter"></i>Twitter</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="https://www.facebook.com/yourname" target="_blank" title="FB Page">
+                      
+                        <i class="fa fa-fw fa-facebook"></i>FB Page</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="https://vk.com/yourname" target="_blank" title="VK Group">
+                      
+                        <i class="fa fa-fw fa-vk"></i>VK Group</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="https://stackoverflow.com/yourname" target="_blank" title="StackOverflow">
+                      
+                        <i class="fa fa-fw fa-stack-overflow"></i>StackOverflow</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="https://youtube.com/yourname" target="_blank" title="YouTube">
+                      
+                        <i class="fa fa-fw fa-youtube"></i>YouTube</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="https://instagram.com/yourname" target="_blank" title="Instagram">
+                      
+                        <i class="fa fa-fw fa-instagram"></i>Instagram</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="skype:yourname?call|chat" target="_blank" title="Skype">
+                      
+                        <i class="fa fa-fw fa-skype"></i>Skype</a>
+                  </span>
+                
+            </div>
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#将-json-转为-excel-表并下载"><span class="nav-number">1.</span> <span class="nav-text">将 json 转为 excel 表并下载</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#背景"><span class="nav-number">1.1.</span> <span class="nav-text">背景</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#工具"><span class="nav-number">1.2.</span> <span class="nav-text">工具</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#步骤"><span class="nav-number">1.3.</span> <span class="nav-text">步骤</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#安装-jsx-xlsx-包"><span class="nav-number">1.3.1.</span> <span class="nav-text">安装 jsx-xlsx 包</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#引入"><span class="nav-number">1.3.2.</span> <span class="nav-text">引入</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#实现效果"><span class="nav-number">1.3.3.</span> <span class="nav-text">实现效果</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#数据含义说明"><span class="nav-number">1.3.3.1.</span> <span class="nav-text">数据含义说明</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#实现思路"><span class="nav-number">1.3.4.</span> <span class="nav-text">实现思路</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#合并单元格"><span class="nav-number">1.4.</span> <span class="nav-text">合并单元格</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#全部代码"><span class="nav-number">1.4.1.</span> <span class="nav-text">全部代码</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#其他"><span class="nav-number">1.5.</span> <span class="nav-text">其他</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#参考"><span class="nav-number">1.6.</span> <span class="nav-text">参考</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">jingping.ye</span>
+
+  
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-area-chart"></i>
+    </span>
+    
+      <span class="post-meta-item-text">Site words total count&#58;</span>
+    
+    <span title="Site words total count">15k</span>
+  
+</div>
+
+
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Mist</a> v5.1.4</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+          <span id="scrollpercent"><span>0</span>%</span>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>

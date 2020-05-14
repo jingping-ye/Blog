@@ -1,0 +1,874 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next mist use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="检索,分析," />
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="检索分析待续 网络引擎的运用（谷歌）操作符+ 强制搜索由于 Google 会忽略和过滤一些常用词（称为 stop words &#x2F; common words），如 and、how 等。使用+可以让搜索引擎强制包括这些词。使用+还可以强制过滤关键词变体形式（不让搜索结果出现关键词的其它形式），如单复数、动词时态、ing 形式等等。 - 逻辑非用于过滤-号后面的关键词。如：MP3 -MP4，表示只搜索">
+<meta property="og:type" content="article">
+<meta property="og:title" content="网络信息资源检索">
+<meta property="og:url" content="http://yoursite.com/2019/01/15/%E7%BD%91%E7%BB%9C%E4%BF%A1%E6%81%AF%E8%B5%84%E6%BA%90%E6%A3%80%E7%B4%A2/index.html">
+<meta property="og:site_name" content="jingping.ye">
+<meta property="og:description" content="检索分析待续 网络引擎的运用（谷歌）操作符+ 强制搜索由于 Google 会忽略和过滤一些常用词（称为 stop words &#x2F; common words），如 and、how 等。使用+可以让搜索引擎强制包括这些词。使用+还可以强制过滤关键词变体形式（不让搜索结果出现关键词的其它形式），如单复数、动词时态、ing 形式等等。 - 逻辑非用于过滤-号后面的关键词。如：MP3 -MP4，表示只搜索">
+<meta property="article:published_time" content="2019-01-14T16:06:42.000Z">
+<meta property="article:modified_time" content="2020-05-14T06:03:36.805Z">
+<meta property="article:author" content="jingping.ye">
+<meta property="article:tag" content="检索">
+<meta property="article:tag" content="分析">
+<meta name="twitter:card" content="summary">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Mist',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":true,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2019/01/15/网络信息资源检索/"/>
+
+
+
+
+
+  <title>网络信息资源检索 | jingping.ye</title>
+  
+
+
+
+
+
+
+
+
+<meta name="generator" content="Hexo 4.2.0"></head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">jingping.ye</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">jingping.ye的Blog</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-question-circle"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-question-circle"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-question-circle"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-question-circle"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/01/15/%E7%BD%91%E7%BB%9C%E4%BF%A1%E6%81%AF%E8%B5%84%E6%BA%90%E6%A3%80%E7%B4%A2/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="jingping.ye">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="jingping.ye">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">网络信息资源检索</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-01-15T00:06:42+08:00">
+                2019-01-15
+              </time>
+            
+
+            
+              <span class="post-meta-divider">|</span>
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-check-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">更新于&#58;</span>
+              
+              <time title="更新于" itemprop="dateModified" datetime="2020-05-14T14:03:36+08:00">
+                2020-05-14
+              </time>
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E6%80%9D%E7%BB%B4%E4%B8%8E%E6%96%B9%E6%B3%95/" itemprop="url" rel="index">
+                    <span itemprop="name">思维与方法</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  870
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  3
+                </span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h2 id="检索分析"><a href="#检索分析" class="headerlink" title="检索分析"></a>检索分析</h2><p>待续</p>
+<h2 id="网络引擎的运用（谷歌）"><a href="#网络引擎的运用（谷歌）" class="headerlink" title="网络引擎的运用（谷歌）"></a>网络引擎的运用（谷歌）</h2><h3 id="操作符"><a href="#操作符" class="headerlink" title="操作符"></a>操作符</h3><p><code>+</code> 强制搜索<br>由于 Google 会忽略和过滤一些常用词（称为 stop words / common words），如 and、how 等。使用+可以让搜索引擎强制包括这些词。使用+还可以强制过滤关键词变体形式（不让搜索结果出现关键词的其它形式），如单复数、动词时态、ing 形式等等。</p>
+<p><code>-</code> 逻辑非<br>用于过滤-号后面的关键词。如：MP3 -MP4，表示只搜索 MP3 而不要 MP4 的搜索结果。 -号后面没有空格。</p>
+<p><code>~</code> 同义词<br>关键词前加波浪线。如：~table 。</p>
+<p><code>*</code> 通配符<br>如：Google was founded in * 。</p>
+<p><code>**</code> 指数<br>作用同 ^ ，如：2**10 。</p>
+<p><code>&quot; &quot;</code> 引号<br>用引号精确搜索，有时可只用左侧引号。如：”Google hacking” = “Google hacking 。</p>
+<p><code>|</code> 逻辑或<br>作用同 OR ，如：Google hacking | hacks 。</p>
+<p><code>..</code> 数字范围<br>用于限定数值范围，如：spring festival logo 2002..2009 。</p>
+<p><code>^</code> 指数<br>作用同 ** ，如：2^10 。</p>
+<h3 id="操作命令"><a href="#操作命令" class="headerlink" title="操作命令"></a>操作命令</h3><p><code>OR</code> 逻辑或<br>作用同 | ，如：Google hacking OR hacks 。</p>
+<p><code>define</code>: 关键词定义<br>查询关键词的网络释义。如： define:google 。</p>
+<p><code>ext</code>: 限定搜索指定文件类型<br>作用同 filetype:</p>
+<p><code>filetype</code>: 限定搜索指定文件类型<br>作用同 ext: 如：filetype:pdf = ext:pdf 。目前文件类型支持如下格式：<br>Adobe Acrobat PDF (.pdf)<br>Adobe Postscript (.ps)<br>Autodesk DWF (.dwf)<br>Google 地球 KML (.kml)<br>Google 地球 KMZ (.kmz)<br>Lotus 1-2-3（wk1、wk2、wk3、wk4、wk5、wki、wks、wku）<br>Lotus WordPro (.lwp)<br>MacWrite (.mw)<br>Microsoft Excel (.xls)<br>Microsoft Powerpoint (.ppt)<br>Microsoft Word (.doc)<br>Microsoft Works（wks、wps、wdb）<br>Microsoft Write (.wri)<br>Rich Text Format 富文本格式 (.rtf)<br>Shockwave Flash (.swf)<br>纯文本（ans、txt）</p>
+<p><code>intitle</code>: 限定搜索标题中含指定关键词的网页<br>如： intitle:google search guide 。<br>限定多个关键词用 allintitle:</p>
+<p><code>inurl</code>: 限定搜索 url 中含指定关键词的网页<br>如： inurl:google search guide 。通过 inurl:view.shtml 你可以找到在线的网络摄像头。<br>限定多个关键词用 allinurl:</p>
+<p><code>inanchor</code>: 限定搜索页面链接锚文本中含指定关键词的网页<br>如： inanchor:google search guide 。<br>限定多个关键词用 allinanchor:</p>
+<p><code>intext</code>: 限定搜索正文文本（不含标题和链接）中含指定关键词的网页<br>如： intext:google vs mircosoft。</p>
+<h4 id="网站网页命令"><a href="#网站网页命令" class="headerlink" title="网站网页命令"></a>网站网页命令</h4><p><code>site</code>: 限定搜索某网站的网页<br>如： site:<a href="http://www.google.com" target="_blank" rel="noopener">www.google.com</a> 。</p>
+<p><code>link</code>: 搜索链向某网站/网址的网页<br>如： link:<a href="http://www.google.com" target="_blank" rel="noopener">www.google.com</a> 。</p>
+<p><code>related</code>: 搜索与某网页相似或相关的页面<br>如： related:<a href="http://www.google.com" target="_blank" rel="noopener">www.google.com</a> 。</p>
+<p><code>cache</code>: 搜索某网页在 Google 缓存（网页快照）中的旧版本<br>如： cache:<a href="http://www.google.com" target="_blank" rel="noopener">www.google.com</a> 。</p>
+<p><code>info</code>: 综合查询某网页的信息，即列出上述四个命令<br>如： info:<a href="http://www.google.com" target="_blank" rel="noopener">www.google.com</a> 。<br>作用同 id:</p>
+<h3 id="计算器"><a href="#计算器" class="headerlink" title="计算器"></a>计算器</h3><p>54kg=?g</p>
+<h3 id="其他技巧"><a href="#其他技巧" class="headerlink" title="其他技巧"></a>其他技巧</h3><h4 id="浏览器和电脑操作"><a href="#浏览器和电脑操作" class="headerlink" title="浏览器和电脑操作"></a>浏览器和电脑操作</h4><p><code>ctrl+F</code>:在本页中查找关键字<br><code>ctrl+L</code>:选中浏览器地址<br><code>ctrl+tab</code>:切换浏览器标签<br><code>alt+tab</code>:切换程序</p>
+<h2 id="常用网址"><a href="#常用网址" class="headerlink" title="常用网址"></a>常用网址</h2><h3 id="学习视频网站"><a href="#学习视频网站" class="headerlink" title="学习视频网站"></a>学习视频网站</h3><p><a href="https://www.icourse163.org/" target="_blank" rel="noopener">中国大学 MOOC(慕课)_国家精品课程在线学习平台</a><br><a href="https://open.163.com/" target="_blank" rel="noopener">网易公开课</a><br><a href="http://www.xuetangx.com/" target="_blank" rel="noopener">学堂在线-精品中文慕课(mooc)平台</a><br><a href="http://www.coursade.com/" target="_blank" rel="noopener">Coursade - Discover online learning</a><br><a href="https://www.khanacademy.org/" target="_blank" rel="noopener">Khan Academy | Free Online Courses, Lessons &amp; Practicea</a><br><a href="https://www.coursera.org/" target="_blank" rel="noopener">Coursera | Online Courses From Top Universities. Join for Free</a><br><a href="http://www.icourses.cn/home/" target="_blank" rel="noopener">爱课程</a></p>
+<h3 id="资料检索网站"><a href="#资料检索网站" class="headerlink" title="资料检索网站"></a>资料检索网站</h3><p><a href="https://book.douban.com/" target="_blank" rel="noopener">豆瓣读书</a><br><a href="http://www.360doc.com/index.html" target="_blank" rel="noopener">360doc 个人图书馆</a><br><a href="https://wenku.baidu.com/" target="_blank" rel="noopener">百度文库</a><br><a href="http://www.nlc.cn/" target="_blank" rel="noopener">中国国家图书馆•中国国家数字图书馆</a></p>
+<h3 id="免费资源下载网站"><a href="#免费资源下载网站" class="headerlink" title="免费资源下载网站"></a>免费资源下载网站</h3><p><a href="http://www.panduoduo.net/" target="_blank" rel="noopener">盘多多-百度云盘-百度云搜索-百度云盘资源搜索-百度网盘搜索引擎-微盘,新浪微盘-网盘搜索_盘多多</a></p>
+<h2 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h2><p>[1]<a href="http://www.googleguide.com/" target="_blank" rel="noopener">interactive online google tutorial and references - google guide</a></p>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/%E6%A3%80%E7%B4%A2/" rel="tag"># 检索</a>
+          
+            <a href="/tags/%E5%88%86%E6%9E%90/" rel="tag"># 分析</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2019/01/14/Javascript%E5%AF%B9%E8%B1%A1%E6%95%B0%E7%BB%84%E6%93%8D%E4%BD%9C%E5%8F%82%E8%80%83/" rel="next" title="Javascript对象数组操作参考">
+                <i class="fa fa-chevron-left"></i> Javascript对象数组操作参考
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2019/01/15/CSS%E4%B8%8D%E5%90%8C%E7%B1%BB%E5%9E%8B%E4%B8%8E%E4%BD%BF%E7%94%A8%E4%B8%8D%E5%90%8C%E7%B1%BB%E5%9E%8B%E7%9A%84%E4%BC%98%E7%BC%BA%E7%82%B9/" rel="prev" title="CSS不同类型与使用不同类型的优缺点">
+                CSS不同类型与使用不同类型的优缺点 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <p class="site-author-name" itemprop="name">jingping.ye</p>
+              <p class="site-description motion-element" itemprop="description">jingping.ye的Blog|文章</p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">19</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">7</span>
+                  <span class="site-state-item-name">分类</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">22</span>
+                  <span class="site-state-item-name">标签</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
+          
+
+          
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="https://github.com/yourname" target="_blank" title="GitHub">
+                      
+                        <i class="fa fa-fw fa-github"></i>GitHub</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="mailto:yourname@gmail.com" target="_blank" title="E-Mail">
+                      
+                        <i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="https://plus.google.com/yourname" target="_blank" title="Google">
+                      
+                        <i class="fa fa-fw fa-google"></i>Google</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="https://twitter.com/yourname" target="_blank" title="Twitter">
+                      
+                        <i class="fa fa-fw fa-twitter"></i>Twitter</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="https://www.facebook.com/yourname" target="_blank" title="FB Page">
+                      
+                        <i class="fa fa-fw fa-facebook"></i>FB Page</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="https://vk.com/yourname" target="_blank" title="VK Group">
+                      
+                        <i class="fa fa-fw fa-vk"></i>VK Group</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="https://stackoverflow.com/yourname" target="_blank" title="StackOverflow">
+                      
+                        <i class="fa fa-fw fa-stack-overflow"></i>StackOverflow</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="https://youtube.com/yourname" target="_blank" title="YouTube">
+                      
+                        <i class="fa fa-fw fa-youtube"></i>YouTube</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="https://instagram.com/yourname" target="_blank" title="Instagram">
+                      
+                        <i class="fa fa-fw fa-instagram"></i>Instagram</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="skype:yourname?call|chat" target="_blank" title="Skype">
+                      
+                        <i class="fa fa-fw fa-skype"></i>Skype</a>
+                  </span>
+                
+            </div>
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#检索分析"><span class="nav-number">1.</span> <span class="nav-text">检索分析</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#网络引擎的运用（谷歌）"><span class="nav-number">2.</span> <span class="nav-text">网络引擎的运用（谷歌）</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#操作符"><span class="nav-number">2.1.</span> <span class="nav-text">操作符</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#操作命令"><span class="nav-number">2.2.</span> <span class="nav-text">操作命令</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#网站网页命令"><span class="nav-number">2.2.1.</span> <span class="nav-text">网站网页命令</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#计算器"><span class="nav-number">2.3.</span> <span class="nav-text">计算器</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#其他技巧"><span class="nav-number">2.4.</span> <span class="nav-text">其他技巧</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#浏览器和电脑操作"><span class="nav-number">2.4.1.</span> <span class="nav-text">浏览器和电脑操作</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#常用网址"><span class="nav-number">3.</span> <span class="nav-text">常用网址</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#学习视频网站"><span class="nav-number">3.1.</span> <span class="nav-text">学习视频网站</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#资料检索网站"><span class="nav-number">3.2.</span> <span class="nav-text">资料检索网站</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#免费资源下载网站"><span class="nav-number">3.3.</span> <span class="nav-text">免费资源下载网站</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#参考文献"><span class="nav-number">4.</span> <span class="nav-text">参考文献</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">jingping.ye</span>
+
+  
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-area-chart"></i>
+    </span>
+    
+      <span class="post-meta-item-text">Site words total count&#58;</span>
+    
+    <span title="Site words total count">15k</span>
+  
+</div>
+
+
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Mist</a> v5.1.4</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+          <span id="scrollpercent"><span>0</span>%</span>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
