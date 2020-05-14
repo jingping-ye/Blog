@@ -2,7 +2,7 @@
 <search>
   <entry>
     <title>CSS不同类型与使用不同类型的优缺点</title>
-    <url>/2019/01/15/CSS%E4%B8%8D%E5%90%8C%E7%B1%BB%E5%9E%8B%E4%B8%8E%E4%BD%BF%E7%94%A8%E4%B8%8D%E5%90%8C%E7%B1%BB%E5%9E%8B%E7%9A%84%E4%BC%98%E7%BC%BA%E7%82%B9/</url>
+    <url>/Blog/2019/01/15/CSS%E4%B8%8D%E5%90%8C%E7%B1%BB%E5%9E%8B%E4%B8%8E%E4%BD%BF%E7%94%A8%E4%B8%8D%E5%90%8C%E7%B1%BB%E5%9E%8B%E7%9A%84%E4%BC%98%E7%BC%BA%E7%82%B9/</url>
     <content><![CDATA[<h2 id="内联样式、内部样式、外部样式"><a href="#内联样式、内部样式、外部样式" class="headerlink" title="内联样式、内部样式、外部样式"></a>内联样式、内部样式、外部样式</h2><h3 id="内联样式"><a href="#内联样式" class="headerlink" title="内联样式"></a>内联样式</h3><p>使用 style 关键字将 css 代码嵌入到 html 代码中，与 html 代码混写。具体如下：</p>
 <figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">p</span> <span class="attr">style</span>=<span class="string">"color:red; text-align:center"</span>&gt;</span>内容<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
@@ -50,7 +50,7 @@
   </entry>
   <entry>
     <title>ES6中类的私有方法</title>
-    <url>/2019/06/16/ES6%E4%B8%AD%E7%B1%BB%E7%9A%84%E7%A7%81%E6%9C%89%E6%96%B9%E6%B3%95/</url>
+    <url>/Blog/2019/06/16/ES6%E4%B8%AD%E7%B1%BB%E7%9A%84%E7%A7%81%E6%9C%89%E6%96%B9%E6%B3%95/</url>
     <content><![CDATA[<p>实现私有方法是类的常规操作，那么有哪些方法呢？经过查找有以下几种。</p>
 <ol>
 <li>在命名上加以区分，在私有方法前加上下划线(不靠谱，该访问的还是可以访问到)</li>
@@ -77,8 +77,118 @@
       </tags>
   </entry>
   <entry>
+    <title>Read Plan</title>
+    <url>/Blog/2019/05/14/Read-Plan/</url>
+    <content><![CDATA[<h1 id="百书工程"><a href="#百书工程" class="headerlink" title="百书工程"></a>百书工程</h1><hr>
+<h2 id="起源"><a href="#起源" class="headerlink" title="起源"></a>起源</h2><p>想法来自于简明现代魔法网站。</p>
+<p>引：简明现代魔法网站</p>
+<blockquote>
+<p>很多人觉得自己技术进步很慢，学习效率低，我觉得一个重要原因是看的书少了。多少是多呢？起码得看 3、4、5、6 米吧。给个具体的数量，那就 100 本书吧。很多人知识结构不好而且不系统，因为在特定领域有一个足够量的知识量+足够良好的知识结构，系统化以后就足以应对大量未曾遇到过的问题。</p>
+</blockquote>
+<blockquote>
+<p>奉劝自学者：构建特定领域的知识结构体系的路径中再也没有比学习该专业的专业课程更好的了。如果我的知识结构体系足以囊括面试官的大部分甚至吞并他的知识结构体系的话，读到他言语中的一个词我们就已经知道他要表达什么，我们可以让他坐“上位”毕竟他是面试官，但是在知识结构体系以及心理上我们就居高临下。</p>
+</blockquote>
+<blockquote>
+<p>所以，阅读一百本计算机著作吧，少年！</p>
+</blockquote>
+<p>作者的话</p>
+<blockquote>
+<p>操千曲而后晓声，观千剑而后识器。</p>
+</blockquote>
+<blockquote>
+<p>博观而约取，厚积而薄发。</p>
+</blockquote>
+<hr>
+<p>预估时间:三年<br>起始时间：2019/01/01</p>
+<h2 id="书籍库"><a href="#书籍库" class="headerlink" title="书籍库"></a>书籍库</h2><h3 id="第一阶段-语言-共计-35-本"><a href="#第一阶段-语言-共计-35-本" class="headerlink" title="第一阶段 语言 共计: 35 本"></a>第一阶段 语言 共计: 35 本</h3><ul>
+<li><a href="https://exploringjs.com/es6/" target="_blank" rel="noopener">《Explore ES6》</a></li>
+<li><input checked="" disabled="" type="checkbox"> 《深入理解 ES6》√ (看完第一遍部分)</li>
+<li><input checked="" disabled="" type="checkbox"> 《JavaScript for impatient programmers 》√ (看完预览部分)</li>
+<li>《JavaScript 面向对象精要》</li>
+<li>《JavaScript 忍者秘籍》</li>
+<li>《JavaScript DOM 编程艺术(第 2 版)》</li>
+<li>《JavaScript 高级程序设计(第 2 版)》</li>
+<li>《高性能 JavaScript》</li>
+<li>《高性能网站建设指南》</li>
+<li><a href="http://speakingjs.com/es5/index.html" target="_blank" rel="noopener">《speaking javascript》</a></li>
+<li>《High Performance Browser Networking》</li>
+<li>《Effective JavaScript》</li>
+<li>《JavaScript 语言精粹》</li>
+<li>《JavaScript 权威指南(第 6 版)》</li>
+<li>《JavaScript 设计模式与开发实践》</li>
+<li>《高性能 javascript》</li>
+<li>《JavaScript 函数式编程指南》</li>
+<li>《现代前端技术解析》</li>
+<li>《你不知道的 JavaScript(上)》</li>
+<li>《你不知道的 JavaScript(中)》</li>
+<li>《你不知道的 JavaScript(下)》</li>
+<li>《JavaScript 面向对象编程指南（第 2 版）》</li>
+<li>《精通正则表达式》</li>
+<li>《Thinking in JavaScript (English Edition)》</li>
+<li>《The Past, Present, and Future of JavaScript (English Edition)》</li>
+<li>《Full-Stack Vue.js 2 and Laravel 5: Bring the frontend and backend together with Vue, Vuex, and Laravel (English Edition)》</li>
+<li>《Learning JavaScript Data Structures and Algorithms: Write complex and powerful JavaScript code using the latest ECMAScript, 3rd Edition (English Edition)》</li>
+<li>《Learning TypeScript 2.x: Develop and maintain captivating web applications with ease, 2nd Edition (English Edition) 》</li>
+<li>《Eloquent JavaScript, 2nd Ed.: A Modern Introduction to Programming》</li>
+<li>《Learning Vue.js 2: Learn how to build amazing and complex reactive web applications easily with Vue.js (English Edition)》</li>
+<li>《Mastering TypeScript - Second Edition (English Edition)》</li>
+<li>《Modern JavaScript Applications (English Edition)》</li>
+<li>《Vue.js 2 Design Patterns and Best Practices: Build enterprise-ready, modular Vue.js applications with Vuex and Nuxt (English Edition)》</li>
+<li>《Modular Programming with JavaScript (English Edition)》</li>
+<li>《Hands-on Machine Learning with JavaScript: Solve complex computational web problems using machine learning (English Edition) 》</li>
+<li>《Eloquent JavaScript, 3rd Edition: A Modern Introduction to Programming 》</li>
+<li>《React 进阶之路》</li>
+<li>《React 设计模式与最佳实践》</li>
+<li>《深入 React 技术栈》</li>
+<li>《深入浅出 React 和 Redux》</li>
+<li>《React Flux webpack Babel 整合开发》</li>
+</ul>
+<h3 id="第二阶段-编程思想-共计-12-本"><a href="#第二阶段-编程思想-共计-12-本" class="headerlink" title="第二阶段 编程思想 共计 12 本"></a>第二阶段 编程思想 共计 12 本</h3><ul>
+<li>《人月神话》</li>
+<li>《编译原理(第 2 版)》</li>
+<li>《代码整洁之道》</li>
+<li>《计算机的构造和解释》</li>
+<li>《编程之美:微软技术面试心得》</li>
+<li>《算法导论》</li>
+<li>《编程珠玑》</li>
+<li>《软件随想录:程序员部落酋长 Joel 谈软件》</li>
+<li>《代码大全》</li>
+<li>《重构:改善既有代码的设计》</li>
+<li>《程序员修炼之道:从小工到专家》</li>
+<li>《深入理解计算机系统》</li>
+<li>《高效程序员的 45 个习惯》</li>
+<li>《阿里技术：不止代码》</li>
+<li>《构建之法：现代软件工程》</li>
+</ul>
+<h3 id="第三阶段-工作与编程"><a href="#第三阶段-工作与编程" class="headerlink" title="第三阶段 工作与编程"></a>第三阶段 工作与编程</h3><p>// 项目管理类</p>
+<ul>
+<li>《构建之法》</li>
+</ul>
+<h3 id="第四阶段-底层-共计：4-本"><a href="#第四阶段-底层-共计：4-本" class="headerlink" title="第四阶段 底层 共计：4 本"></a>第四阶段 底层 共计：4 本</h3><p>// 数据结构、算法、数学之类的</p>
+<ul>
+<li>《学习 javascript 数据结构与算法》</li>
+<li>《线性代数》</li>
+<li>《深入理解计算机系统》</li>
+<li>《TCP/IP 协议》</li>
+<li>《剑指 offer》</li>
+<li>《图解 http》</li>
+</ul>
+<h3 id="交叉-共计：2-本"><a href="#交叉-共计：2-本" class="headerlink" title="交叉 共计：2 本"></a>交叉 共计：2 本</h3><ul>
+<li>《MySQL 必知必会》</li>
+<li>《SQL 必知必会》</li>
+<li>《白帽子讲 web 安全》</li>
+</ul>
+]]></content>
+      <categories>
+        <category>生活</category>
+      </categories>
+      <tags>
+        <tag>阅读</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Javascript对象数组操作参考</title>
-    <url>/2019/01/14/Javascript%E5%AF%B9%E8%B1%A1%E6%95%B0%E7%BB%84%E6%93%8D%E4%BD%9C%E5%8F%82%E8%80%83/</url>
+    <url>/Blog/2019/01/14/Javascript%E5%AF%B9%E8%B1%A1%E6%95%B0%E7%BB%84%E6%93%8D%E4%BD%9C%E5%8F%82%E8%80%83/</url>
     <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><h3 id="起源"><a href="#起源" class="headerlink" title="起源"></a>起源</h3><ul>
 <li>对象数组与二维数据表相似</li>
 <li>工作中大部分接触对象数组，很多时候都是在对对象数组进行操作以及对其中的数据进行处理</li>
@@ -212,118 +322,8 @@
       </tags>
   </entry>
   <entry>
-    <title>Read Plan</title>
-    <url>/2019/05/14/Read-Plan/</url>
-    <content><![CDATA[<h1 id="百书工程"><a href="#百书工程" class="headerlink" title="百书工程"></a>百书工程</h1><hr>
-<h2 id="起源"><a href="#起源" class="headerlink" title="起源"></a>起源</h2><p>想法来自于简明现代魔法网站。</p>
-<p>引：简明现代魔法网站</p>
-<blockquote>
-<p>很多人觉得自己技术进步很慢，学习效率低，我觉得一个重要原因是看的书少了。多少是多呢？起码得看 3、4、5、6 米吧。给个具体的数量，那就 100 本书吧。很多人知识结构不好而且不系统，因为在特定领域有一个足够量的知识量+足够良好的知识结构，系统化以后就足以应对大量未曾遇到过的问题。</p>
-</blockquote>
-<blockquote>
-<p>奉劝自学者：构建特定领域的知识结构体系的路径中再也没有比学习该专业的专业课程更好的了。如果我的知识结构体系足以囊括面试官的大部分甚至吞并他的知识结构体系的话，读到他言语中的一个词我们就已经知道他要表达什么，我们可以让他坐“上位”毕竟他是面试官，但是在知识结构体系以及心理上我们就居高临下。</p>
-</blockquote>
-<blockquote>
-<p>所以，阅读一百本计算机著作吧，少年！</p>
-</blockquote>
-<p>作者的话</p>
-<blockquote>
-<p>操千曲而后晓声，观千剑而后识器。</p>
-</blockquote>
-<blockquote>
-<p>博观而约取，厚积而薄发。</p>
-</blockquote>
-<hr>
-<p>预估时间:三年<br>起始时间：2019/01/01</p>
-<h2 id="书籍库"><a href="#书籍库" class="headerlink" title="书籍库"></a>书籍库</h2><h3 id="第一阶段-语言-共计-35-本"><a href="#第一阶段-语言-共计-35-本" class="headerlink" title="第一阶段 语言 共计: 35 本"></a>第一阶段 语言 共计: 35 本</h3><ul>
-<li><a href="https://exploringjs.com/es6/" target="_blank" rel="noopener">《Explore ES6》</a></li>
-<li><input checked="" disabled="" type="checkbox"> 《深入理解 ES6》√ (看完第一遍部分)</li>
-<li><input checked="" disabled="" type="checkbox"> 《JavaScript for impatient programmers 》√ (看完预览部分)</li>
-<li>《JavaScript 面向对象精要》</li>
-<li>《JavaScript 忍者秘籍》</li>
-<li>《JavaScript DOM 编程艺术(第 2 版)》</li>
-<li>《JavaScript 高级程序设计(第 2 版)》</li>
-<li>《高性能 JavaScript》</li>
-<li>《高性能网站建设指南》</li>
-<li><a href="http://speakingjs.com/es5/index.html" target="_blank" rel="noopener">《speaking javascript》</a></li>
-<li>《High Performance Browser Networking》</li>
-<li>《Effective JavaScript》</li>
-<li>《JavaScript 语言精粹》</li>
-<li>《JavaScript 权威指南(第 6 版)》</li>
-<li>《JavaScript 设计模式与开发实践》</li>
-<li>《高性能 javascript》</li>
-<li>《JavaScript 函数式编程指南》</li>
-<li>《现代前端技术解析》</li>
-<li>《你不知道的 JavaScript(上)》</li>
-<li>《你不知道的 JavaScript(中)》</li>
-<li>《你不知道的 JavaScript(下)》</li>
-<li>《JavaScript 面向对象编程指南（第 2 版）》</li>
-<li>《精通正则表达式》</li>
-<li>《Thinking in JavaScript (English Edition)》</li>
-<li>《The Past, Present, and Future of JavaScript (English Edition)》</li>
-<li>《Full-Stack Vue.js 2 and Laravel 5: Bring the frontend and backend together with Vue, Vuex, and Laravel (English Edition)》</li>
-<li>《Learning JavaScript Data Structures and Algorithms: Write complex and powerful JavaScript code using the latest ECMAScript, 3rd Edition (English Edition)》</li>
-<li>《Learning TypeScript 2.x: Develop and maintain captivating web applications with ease, 2nd Edition (English Edition) 》</li>
-<li>《Eloquent JavaScript, 2nd Ed.: A Modern Introduction to Programming》</li>
-<li>《Learning Vue.js 2: Learn how to build amazing and complex reactive web applications easily with Vue.js (English Edition)》</li>
-<li>《Mastering TypeScript - Second Edition (English Edition)》</li>
-<li>《Modern JavaScript Applications (English Edition)》</li>
-<li>《Vue.js 2 Design Patterns and Best Practices: Build enterprise-ready, modular Vue.js applications with Vuex and Nuxt (English Edition)》</li>
-<li>《Modular Programming with JavaScript (English Edition)》</li>
-<li>《Hands-on Machine Learning with JavaScript: Solve complex computational web problems using machine learning (English Edition) 》</li>
-<li>《Eloquent JavaScript, 3rd Edition: A Modern Introduction to Programming 》</li>
-<li>《React 进阶之路》</li>
-<li>《React 设计模式与最佳实践》</li>
-<li>《深入 React 技术栈》</li>
-<li>《深入浅出 React 和 Redux》</li>
-<li>《React Flux webpack Babel 整合开发》</li>
-</ul>
-<h3 id="第二阶段-编程思想-共计-12-本"><a href="#第二阶段-编程思想-共计-12-本" class="headerlink" title="第二阶段 编程思想 共计 12 本"></a>第二阶段 编程思想 共计 12 本</h3><ul>
-<li>《人月神话》</li>
-<li>《编译原理(第 2 版)》</li>
-<li>《代码整洁之道》</li>
-<li>《计算机的构造和解释》</li>
-<li>《编程之美:微软技术面试心得》</li>
-<li>《算法导论》</li>
-<li>《编程珠玑》</li>
-<li>《软件随想录:程序员部落酋长 Joel 谈软件》</li>
-<li>《代码大全》</li>
-<li>《重构:改善既有代码的设计》</li>
-<li>《程序员修炼之道:从小工到专家》</li>
-<li>《深入理解计算机系统》</li>
-<li>《高效程序员的 45 个习惯》</li>
-<li>《阿里技术：不止代码》</li>
-<li>《构建之法：现代软件工程》</li>
-</ul>
-<h3 id="第三阶段-工作与编程"><a href="#第三阶段-工作与编程" class="headerlink" title="第三阶段 工作与编程"></a>第三阶段 工作与编程</h3><p>// 项目管理类</p>
-<ul>
-<li>《构建之法》</li>
-</ul>
-<h3 id="第四阶段-底层-共计：4-本"><a href="#第四阶段-底层-共计：4-本" class="headerlink" title="第四阶段 底层 共计：4 本"></a>第四阶段 底层 共计：4 本</h3><p>// 数据结构、算法、数学之类的</p>
-<ul>
-<li>《学习 javascript 数据结构与算法》</li>
-<li>《线性代数》</li>
-<li>《深入理解计算机系统》</li>
-<li>《TCP/IP 协议》</li>
-<li>《剑指 offer》</li>
-<li>《图解 http》</li>
-</ul>
-<h3 id="交叉-共计：2-本"><a href="#交叉-共计：2-本" class="headerlink" title="交叉 共计：2 本"></a>交叉 共计：2 本</h3><ul>
-<li>《MySQL 必知必会》</li>
-<li>《SQL 必知必会》</li>
-<li>《白帽子讲 web 安全》</li>
-</ul>
-]]></content>
-      <categories>
-        <category>生活</category>
-      </categories>
-      <tags>
-        <tag>阅读</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>git提交信息</title>
-    <url>/2019/01/14/git%E6%8F%90%E4%BA%A4%E4%BF%A1%E6%81%AF/</url>
+    <url>/Blog/2019/01/14/git%E6%8F%90%E4%BA%A4%E4%BF%A1%E6%81%AF/</url>
     <content><![CDATA[<h2 id="提交信息格式"><a href="#提交信息格式" class="headerlink" title="提交信息格式"></a>提交信息格式</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;type&gt;(&lt;scope&gt;): &lt;subject&gt;</span><br><span class="line">&#x2F;&#x2F; 空一行</span><br><span class="line">&lt;body&gt;</span><br><span class="line">&#x2F;&#x2F; 空一行</span><br><span class="line">&lt;footer&gt;</span><br></pre></td></tr></table></figure>
 
 <h3 id="type-参考"><a href="#type-参考" class="headerlink" title="type 参考"></a>type 参考</h3><p><img src="https://i.imgur.com/Rs6r9HU.png" alt="上传信息"></p>
@@ -344,7 +344,7 @@
   </entry>
   <entry>
     <title>json转Excel下载</title>
-    <url>/2019/08/20/json%E8%BD%ACExcel%E4%B8%8B%E8%BD%BD/</url>
+    <url>/Blog/2019/08/20/json%E8%BD%ACExcel%E4%B8%8B%E8%BD%BD/</url>
     <content><![CDATA[<h1 id="将-json-转为-excel-表并下载"><a href="#将-json-转为-excel-表并下载" class="headerlink" title="将 json 转为 excel 表并下载"></a>将 json 转为 excel 表并下载</h1><h2 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h2><p>通过访问接口，获取 json 数据，将 json 转为 excel 表并下载。</p>
 <h2 id="工具"><a href="#工具" class="headerlink" title="工具"></a>工具</h2><ul>
 <li>react</li>
@@ -448,8 +448,61 @@
 ]]></content>
   </entry>
   <entry>
+    <title>使用Fiddler抓取微信饿了么小程序数据</title>
+    <url>/Blog/2019/09/14/%E4%BD%BF%E7%94%A8Fiddler%E6%8A%93%E5%8F%96%E5%BE%AE%E4%BF%A1%E9%A5%BF%E4%BA%86%E4%B9%88%E5%B0%8F%E7%A8%8B%E5%BA%8F%E6%95%B0%E6%8D%AE/</url>
+    <content><![CDATA[<h2 id="准备"><a href="#准备" class="headerlink" title="准备"></a>准备</h2><ul>
+<li>一部装载 Android 7.0 以下的手机：此处使用华为荣耀 5x</li>
+<li>微信小程序 7.0 以下版本:此处为 6.6.7。此处可通过豌豆荚应用下载。</li>
+<li>安装好的 Fiddler 软件</li>
+<li>良好的<code>wifi</code></li>
+</ul>
+<h2 id="步骤"><a href="#步骤" class="headerlink" title="步骤"></a>步骤</h2><ol>
+<li><p>将手机号电脑连接至同一<code>wifi</code></p>
+</li>
+<li><p>配置 Fiddler</p>
+<p><img src="http://ytju2r.coding-pages.com//general.png" alt="general配置"></p>
+</li>
+</ol>
+<p><img src="http://ytju2r.coding-pages.com//https.png" alt="https配置"></p>
+<p><img src="http://ytju2r.coding-pages.com/connections.png" alt="connections配置"></p>
+<ol start="3">
+<li><p>手机 wifi 设置代理</p>
+<p>（1）选择当前连接的 wifi，进入修改 wifi</p>
+<p>（2）主机名为电脑的 ip 地址，通过<code>ipconfig</code>可以查看到</p>
+<p>（3）端口为 connections 中设置的端口号</p>
+</li>
+</ol>
+<p><img src="http://ytju2r.coding-pages.com//wifi%E9%85%8D%E7%BD%AE.png" alt="wifi配置"></p>
+<ol start="4">
+<li><p>手机安装证书</p>
+<p>（1）电脑打开 Fiddler 软件之后，使用手机访问<code>主机名:端口号</code>,将进入 fiddler 证书下载页面，点击下载证书</p>
+<p><img src="http://ytju2r.coding-pages.com//fiddler%E8%AF%81%E4%B9%A6.png" alt="fiddler证书"></p>
+</li>
+</ol>
+<p>（2）手机进入 wifi 高级设置，选择安装证书</p>
+<p><img src="http://ytju2r.coding-pages.com/%E5%AE%89%E8%A3%85%E8%AF%81%E4%B9%A61.png" alt="安装证书1"></p>
+<p>（3）选择下载证书所在位置，选择用途为 vpn 和应用</p>
+<p><img src="http://ytju2r.coding-pages.com/%E5%AE%89%E8%A3%85%E8%AF%81%E4%B9%A62.png" alt="安装证书2"></p>
+<ol start="5">
+<li>打开微信小程序饿了么，即可抓取数据</li>
+</ol>
+<p><img src="http://ytju2r.coding-pages.com/%E9%A5%BF%E4%BA%86%E4%B9%88.png" alt="饿了么数据"></p>
+<h2 id="Q-A"><a href="#Q-A" class="headerlink" title="Q-A"></a>Q-A</h2><h3 id="为什么要使用-Android-7-0-以下的手机和-7-0-以下的微信小程序版本？"><a href="#为什么要使用-Android-7-0-以下的手机和-7-0-以下的微信小程序版本？" class="headerlink" title="为什么要使用 Android 7.0 以下的手机和 7.0 以下的微信小程序版本？"></a>为什么要使用 Android 7.0 以下的手机和 7.0 以下的微信小程序版本？</h3><p>参考 : <a href="https://testerhome.com/topics/17746" target="_blank" rel="noopener">听说安卓微信 7.0 不能抓 https? · TesterHome</a></p>
+]]></content>
+      <categories>
+        <category>技术</category>
+        <category>爬虫</category>
+      </categories>
+      <tags>
+        <tag>抓取数据</tag>
+        <tag>Fiddler</tag>
+        <tag>手机端</tag>
+        <tag>小程序</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>vuex的简单理解</title>
-    <url>/2019/01/18/vuex%E7%9A%84%E7%AE%80%E5%8D%95%E7%90%86%E8%A7%A3/</url>
+    <url>/Blog/2019/01/18/vuex%E7%9A%84%E7%AE%80%E5%8D%95%E7%90%86%E8%A7%A3/</url>
     <content><![CDATA[<h2 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h2><h3 id="什么是-vuex"><a href="#什么是-vuex" class="headerlink" title="什么是 vuex"></a>什么是 vuex</h3><p>vuex 是一种状态管理模式，或者说我们可以称其为数据中心。</p>
 <h3 id="为什么使用-vuex"><a href="#为什么使用-vuex" class="headerlink" title="为什么使用 vuex"></a>为什么使用 vuex</h3><p>这就相当于一个集团，集团下有很多下属公司。下属公司大了之后，有些事务可能是需要集团总部集中处理，以便提高效率，降低人员冗余。vuex 就是相当于这个中央数据处理部门。我们可以把 vuex 看做总部集团保存的各下属公司都可能用到的数据。</p>
 <h3 id="何时使用-vuex"><a href="#何时使用-vuex" class="headerlink" title="何时使用 vuex"></a>何时使用 vuex</h3><p>相对于本地组件直接调用数据而言，vuex 操作更加复杂，而且也意味着额外的一些开销。</p>
@@ -579,61 +632,109 @@
       </tags>
   </entry>
   <entry>
-    <title>使用Fiddler抓取微信饿了么小程序数据</title>
-    <url>/2019/09/14/%E4%BD%BF%E7%94%A8Fiddler%E6%8A%93%E5%8F%96%E5%BE%AE%E4%BF%A1%E9%A5%BF%E4%BA%86%E4%B9%88%E5%B0%8F%E7%A8%8B%E5%BA%8F%E6%95%B0%E6%8D%AE/</url>
-    <content><![CDATA[<h2 id="准备"><a href="#准备" class="headerlink" title="准备"></a>准备</h2><ul>
-<li>一部装载 Android 7.0 以下的手机：此处使用华为荣耀 5x</li>
-<li>微信小程序 7.0 以下版本:此处为 6.6.7。此处可通过豌豆荚应用下载。</li>
-<li>安装好的 Fiddler 软件</li>
-<li>良好的<code>wifi</code></li>
+    <title>广州出差总结</title>
+    <url>/Blog/2019/10/14/%E5%B9%BF%E5%B7%9E%E5%87%BA%E5%B7%AE%E6%80%BB%E7%BB%93/</url>
+    <content><![CDATA[<h1 id="广州出差总结"><a href="#广州出差总结" class="headerlink" title="广州出差总结"></a>广州出差总结</h1><ol>
+<li><p>一个糟糕的项目架构会将这种糟糕一直延续下去。</p>
+<ul>
+<li><p>难懂</p>
+</li>
+<li><p>难以变动</p>
+</li>
 </ul>
-<h2 id="步骤"><a href="#步骤" class="headerlink" title="步骤"></a>步骤</h2><ol>
-<li><p>将手机号电脑连接至同一<code>wifi</code></p>
+<p>（1）webpack 构建工具没有搭建</p>
+<p>（2）混用 react 和 jquery</p>
+<p>（3）没有开发规范</p>
+<p>（4）没有开发文档</p>
+<p>（5）没有完善的工具链</p>
 </li>
-<li><p>配置 Fiddler</p>
-<p><img src="http://ytju2r.coding-pages.com//general.png" alt="general配置"></p>
+<li><p>学无边界，要加强基础知识的学习。</p>
 </li>
-</ol>
-<p><img src="http://ytju2r.coding-pages.com//https.png" alt="https配置"></p>
-<p><img src="http://ytju2r.coding-pages.com/connections.png" alt="connections配置"></p>
-<ol start="3">
-<li><p>手机 wifi 设置代理</p>
-<p>（1）选择当前连接的 wifi，进入修改 wifi</p>
-<p>（2）主机名为电脑的 ip 地址，通过<code>ipconfig</code>可以查看到</p>
-<p>（3）端口为 connections 中设置的端口号</p>
+<li><p>复杂度高，代码量多的项目应该多考虑设计模式。</p>
 </li>
-</ol>
-<p><img src="http://ytju2r.coding-pages.com//wifi%E9%85%8D%E7%BD%AE.png" alt="wifi配置"></p>
-<ol start="4">
-<li><p>手机安装证书</p>
-<p>（1）电脑打开 Fiddler 软件之后，使用手机访问<code>主机名:端口号</code>,将进入 fiddler 证书下载页面，点击下载证书</p>
-<p><img src="http://ytju2r.coding-pages.com//fiddler%E8%AF%81%E4%B9%A6.png" alt="fiddler证书"></p>
+<li><p>事先设计。</p>
+</li>
+<li><p>加强业务学习。</p>
+</li>
+<li><p>大公司没有想象中的那么美好。</p>
 </li>
 </ol>
-<p>（2）手机进入 wifi 高级设置，选择安装证书</p>
-<p><img src="http://ytju2r.coding-pages.com/%E5%AE%89%E8%A3%85%E8%AF%81%E4%B9%A61.png" alt="安装证书1"></p>
-<p>（3）选择下载证书所在位置，选择用途为 vpn 和应用</p>
-<p><img src="http://ytju2r.coding-pages.com/%E5%AE%89%E8%A3%85%E8%AF%81%E4%B9%A62.png" alt="安装证书2"></p>
-<ol start="5">
-<li>打开微信小程序饿了么，即可抓取数据</li>
+]]></content>
+      <categories>
+        <category>工作</category>
+      </categories>
+      <tags>
+        <tag>总结</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>小程序缓存API解决方案</title>
+    <url>/Blog/2019/11/27/%E5%B0%8F%E7%A8%8B%E5%BA%8F%E7%BC%93%E5%AD%98API%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/</url>
+    <content><![CDATA[<p>为了避免给服务器造成过大压力，造成资源浪费，我们可以将一些 API 数据缓存在客户端本机中。这种缓存的对象应该具有以下特点：</p>
+<ol>
+<li>数据量少。</li>
+<li>及时性要求不高，不需要实时更新。</li>
+<li>数据较为固定。</li>
 </ol>
-<p><img src="http://ytju2r.coding-pages.com/%E9%A5%BF%E4%BA%86%E4%B9%88.png" alt="饿了么数据"></p>
-<h2 id="Q-A"><a href="#Q-A" class="headerlink" title="Q-A"></a>Q-A</h2><h3 id="为什么要使用-Android-7-0-以下的手机和-7-0-以下的微信小程序版本？"><a href="#为什么要使用-Android-7-0-以下的手机和-7-0-以下的微信小程序版本？" class="headerlink" title="为什么要使用 Android 7.0 以下的手机和 7.0 以下的微信小程序版本？"></a>为什么要使用 Android 7.0 以下的手机和 7.0 以下的微信小程序版本？</h3><p>参考 : <a href="https://testerhome.com/topics/17746" target="_blank" rel="noopener">听说安卓微信 7.0 不能抓 https? · TesterHome</a></p>
+<p>对于缓存 API 的方案，分为两种。一是单独封装工具供开发者调用，二是在 http 请求工具中使用缓存代理</p>
+<h2 id="单独封装工具"><a href="#单独封装工具" class="headerlink" title="单独封装工具"></a>单独封装工具</h2><figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">const</span> cacheTool = &#123;</span><br><span class="line">  <span class="comment">/**</span></span><br><span class="line"><span class="comment">   *</span></span><br><span class="line"><span class="comment">   * <span class="doctag">@param <span class="type">&#123;string&#125;</span> </span>key 键名</span></span><br><span class="line"><span class="comment">   * <span class="doctag">@param <span class="type">&#123;any&#125;</span> </span>data 缓存的数据</span></span><br><span class="line"><span class="comment">   * <span class="doctag">@param <span class="type">&#123;number&#125;</span> </span>second 需要缓存的时间，以秒为单位</span></span><br><span class="line"><span class="comment">   */</span></span><br><span class="line">  setItem: <span class="function"><span class="keyword">function</span> (<span class="params">key, data, second</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">const</span> expireTime = <span class="keyword">new</span> <span class="built_in">Date</span>().getTime() + <span class="built_in">Number</span>(second) * <span class="number">1000</span>;</span><br><span class="line">    wx.setStorageSync(key, &#123; data, expireTime &#125;);</span><br><span class="line">  &#125;,</span><br><span class="line">  getItem: <span class="function"><span class="keyword">function</span> (<span class="params">key</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">if</span> (_this._isSet(key)) &#123;</span><br><span class="line">      <span class="keyword">const</span> isNotExpire = <span class="keyword">new</span> <span class="built_in">Date</span>().getTime() &lt;= cache.expireTime;</span><br><span class="line">      <span class="keyword">if</span> (isNotExpire) &#123;</span><br><span class="line">        <span class="keyword">const</span> cache = wx.getStorageSync(key);</span><br><span class="line">        <span class="keyword">return</span> &#123; <span class="attr">valid</span>: <span class="literal">true</span>, <span class="attr">data</span>: cache.data &#125;;</span><br><span class="line">      &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">        <span class="keyword">return</span> &#123; <span class="attr">valid</span>: <span class="literal">false</span> &#125;;</span><br><span class="line">      &#125;</span><br><span class="line">    &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">      <span class="keyword">return</span> &#123; <span class="attr">valid</span>: <span class="literal">false</span> &#125;;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;,</span><br><span class="line">  _isSet: <span class="function"><span class="keyword">function</span> (<span class="params">key</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">const</span> cache = wx.getStorageSync(key);</span><br><span class="line">    <span class="keyword">return</span> cache !== <span class="string">""</span>;</span><br><span class="line">  &#125;,</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<p>调用</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">const</span> cache = cacheTool.getItem(<span class="string">"name"</span>);</span><br><span class="line"><span class="keyword">if</span> (cache.valid) &#123;</span><br><span class="line">  <span class="keyword">this</span>.setData(&#123;</span><br><span class="line">    list: cache.data,</span><br><span class="line">  &#125;);</span><br><span class="line">&#125; <span class="keyword">else</span> &#123;</span><br><span class="line">  <span class="comment">//	http request</span></span><br><span class="line">  <span class="comment">// ...</span></span><br><span class="line">  cacheTool.setItem(<span class="string">"name"</span>, data, <span class="number">600</span>); <span class="comment">// 设置10分钟缓存</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="在-http-工具中使用缓存代理"><a href="#在-http-工具中使用缓存代理" class="headerlink" title="在 http 工具中使用缓存代理"></a>在 http 工具中使用缓存代理</h2><figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="comment">//	https.js</span></span><br><span class="line"><span class="comment">//  <span class="doctag">TODO:</span>仍需改进</span></span><br><span class="line"><span class="keyword">const</span> baseURL = <span class="string">"https://nufm.dfcfw.com/EM_Finance2014NumericApplication"</span>;</span><br><span class="line"><span class="keyword">const</span> cacheTool = <span class="built_in">require</span>(<span class="string">"../util/cacheTool.js"</span>);</span><br><span class="line"><span class="keyword">const</span> http = <span class="function">(<span class="params">&#123; url, data, method = <span class="string">"get"</span>, cache = <span class="literal">false</span>, expire = <span class="number">600</span>, cacheKey = <span class="string">"_"</span> &#125;</span>) =&gt;</span> &#123;</span><br><span class="line">  <span class="keyword">return</span> <span class="keyword">new</span> <span class="built_in">Promise</span>(<span class="function">(<span class="params">resolve, reject</span>) =&gt;</span> &#123;</span><br><span class="line">    <span class="keyword">if</span> (cache) &#123;</span><br><span class="line">      <span class="keyword">const</span> cache = cacheTool.getItem(cacheKey);</span><br><span class="line">      <span class="keyword">if</span> (cache.valid) &#123;</span><br><span class="line">        resolve(cache.data);</span><br><span class="line">      &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">        httpRequest(url, data, method, cache, expire, cacheKey)</span><br><span class="line">          .then(<span class="function">(<span class="params">res</span>) =&gt;</span> &#123;</span><br><span class="line">            resolve(res);</span><br><span class="line">          &#125;)</span><br><span class="line">          .catch(<span class="function">(<span class="params">err</span>) =&gt;</span> &#123;</span><br><span class="line">            reject(err);</span><br><span class="line">          &#125;);</span><br><span class="line">      &#125;</span><br><span class="line">    &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">      httpRequest(url, data, method, cache)</span><br><span class="line">        .then(<span class="function">(<span class="params">res</span>) =&gt;</span> &#123;</span><br><span class="line">          resolve(res);</span><br><span class="line">        &#125;)</span><br><span class="line">        .catch(<span class="function">(<span class="params">err</span>) =&gt;</span> &#123;</span><br><span class="line">          reject(err);</span><br><span class="line">        &#125;);</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;);</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> httpRequest = <span class="function">(<span class="params">url, data, method, cache, expire, cacheKey</span>) =&gt;</span> &#123;</span><br><span class="line">  <span class="keyword">return</span> <span class="keyword">new</span> <span class="built_in">Promise</span>(<span class="function">(<span class="params">resolve, reject</span>) =&gt;</span> &#123;</span><br><span class="line">    wx.request(&#123;</span><br><span class="line">      url: <span class="string">`<span class="subst">$&#123;baseURL&#125;</span>/<span class="subst">$&#123;url&#125;</span>`</span>,</span><br><span class="line">      data,</span><br><span class="line">      method,</span><br><span class="line">      header: &#123;</span><br><span class="line">        <span class="string">"content-type"</span>: <span class="string">"application-json"</span>,</span><br><span class="line">      &#125;,</span><br><span class="line">      complete: <span class="function"><span class="keyword">function</span> (<span class="params">res</span>) </span>&#123;</span><br><span class="line">        <span class="keyword">if</span> (res.statusCode &gt;= <span class="number">200</span> &amp;&amp; res.statusCode &lt; <span class="number">300</span>) &#123;</span><br><span class="line">          <span class="keyword">if</span> (cache) &#123;</span><br><span class="line">            cacheTool.setItem(cacheKey, res, expire);</span><br><span class="line">          &#125;</span><br><span class="line">          resolve(res.data);</span><br><span class="line">        &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">          reject(res);</span><br><span class="line">        &#125;</span><br><span class="line">      &#125;,</span><br><span class="line">    &#125;);</span><br><span class="line">  &#125;);</span><br><span class="line">&#125;;</span><br><span class="line"><span class="built_in">module</span>.exports = http;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="comment">//	调用</span></span><br><span class="line">http(&#123;</span><br><span class="line">  url:</span><br><span class="line">    <span class="string">"JS.aspx?type=CT&amp;cmd=BK04781&amp;sty=DCFFMBFMS&amp;st=&amp;sr=&amp;p=&amp;ps=&amp;cb=&amp;js=result37523225((x))&amp;token=0b9469e9fdfd123fcec4532ae1c20f4f&amp;callback=result37523225&amp;_=1574835480421"</span>,</span><br><span class="line">  cache: <span class="literal">true</span>,</span><br><span class="line">  expire: <span class="number">10</span>,</span><br><span class="line">  cacheKey: <span class="string">"test"</span>,</span><br><span class="line">  data: <span class="string">"book_id=947&amp;4id=914372&amp;sky=fd732789509e52a2169d58f8959af7c8&amp;t=1574836186&amp;_type=ajax&amp;rndval=1574834470633"</span>,</span><br><span class="line">&#125;).then(<span class="function">(<span class="params">res</span>) =&gt;</span> &#123;</span><br><span class="line">  <span class="built_in">console</span>.log(<span class="string">"res"</span>, <span class="built_in">JSON</span>.stringify(res));</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
 ]]></content>
       <categories>
         <category>技术</category>
-        <category>爬虫</category>
+        <category>前端</category>
       </categories>
       <tags>
-        <tag>抓取数据</tag>
-        <tag>Fiddler</tag>
-        <tag>手机端</tag>
         <tag>小程序</tag>
       </tags>
   </entry>
   <entry>
+    <title>引用豆瓣图片在手机上失效</title>
+    <url>/Blog/2019/05/10/%E5%BC%95%E7%94%A8%E8%B1%86%E7%93%A3%E5%9B%BE%E7%89%87%E5%9C%A8%E6%89%8B%E6%9C%BA%E4%B8%8A%E5%A4%B1%E6%95%88/</url>
+    <content><![CDATA[<h2 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a>问题描述</h2><p>在做一个个人页面时，引用了豆瓣读书里面书籍封面图片。但是出现一个现象:在 web 端可以显示的图片，在手机上却不能正确的加载出来。</p>
+<h2 id="原因"><a href="#原因" class="headerlink" title="原因"></a>原因</h2><p>豆瓣 API 请求是有限制的，约为每分钟 40 次，超过了这个次数就要被限制，限制为每分钟 10 次。所以，如果网页上引用了大量的豆瓣图片，那么，一次可能会加载出一些，但是加载不出来全部。特别是刷新之后，确定为同一源头发起的请求之后，大量的图片将请求不到。</p>
+<h2 id="解决方法"><a href="#解决方法" class="headerlink" title="解决方法"></a>解决方法</h2><p>使用图片缓存方法，使用<code>https://images.weserv.nl/?url=</code>再加上原来豆瓣图片地址去掉<code>https://</code>的链接，即可访问。</p>
+<p>具体:</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="comment">//	原来</span></span><br><span class="line">https:<span class="comment">//img3.doubanio.com/view/subject/l/public/s2955123.jpg</span></span><br><span class="line"><span class="comment">//	修改后</span></span><br><span class="line">https:<span class="comment">//images.weserv.nl/?url=img3.doubanio.com/view/subject/l/public/s2955123.jpg</span></span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>问题</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>快速排序的思路与方法</title>
+    <url>/Blog/2019/04/03/%E5%BF%AB%E9%80%9F%E6%8E%92%E5%BA%8F%E7%9A%84%E6%80%9D%E8%B7%AF%E4%B8%8E%E6%96%B9%E6%B3%95/</url>
+    <content><![CDATA[<h1 id="快速排序算法的思路与实现-js-语言"><a href="#快速排序算法的思路与实现-js-语言" class="headerlink" title="快速排序算法的思路与实现(js 语言)"></a>快速排序算法的思路与实现(js 语言)</h1><h2 id="D-amp-C-divide-and-conquer-分而治之"><a href="#D-amp-C-divide-and-conquer-分而治之" class="headerlink" title="D&amp;C(divide and conquer) 分而治之"></a>D&amp;C(divide and conquer) 分而治之</h2><p>d&amp;c 是一种递归式解决问题的方法(思路)，使用 d&amp;c 解决问题分为两个步骤:1. 找出基线条件(不再递归的条件),这种条件应该尽可能的简单。 2. 不断将问题分解(或者说缩小规模)，直到符合基线条件</p>
+<h2 id="逻辑"><a href="#逻辑" class="headerlink" title="逻辑"></a>逻辑</h2><p>如果一个数组是已经排好序的数组，那个在这个数组中任选一个元素，元素左边的元素将会小于等于该元素，元素所有右边的元素将会大于等于该元素。</p>
+<p>我们依据该元素，可以对一个无序数组做如下操作。任选一个元素，循环该无需数组，声明两个数组变量，一个是 less,一个是 greater,我们把小于该元素的数放入 less 数组中，把大于该元素放入 greater 中，那个便满足了以上的逻辑。接下来，我们再从 less 数组中选取一个元素，执行如上操作，使得 less 数组又分为两组，一组比选中元素小，一组比选中元素大。对 greater 数组也同样操作。这样下来，最后我们得到的就是一个有序的数组。</p>
+<h2 id="步骤"><a href="#步骤" class="headerlink" title="步骤"></a>步骤</h2><ol>
+<li>找基准值(pivot)</li>
+<li>分区(partitioning):找出比基准值以及比基准值大的元素 =&gt; 数组划分为:一个小于基准值的子数组,基准值,一个大于基准值的子数组</li>
+<li>递归</li>
+</ol>
+<h2 id="代码实现"><a href="#代码实现" class="headerlink" title="代码实现"></a>代码实现</h2><figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">quickSort</span>(<span class="params">arr</span>) </span>&#123;</span><br><span class="line">  <span class="keyword">if</span> (arr.length &lt; <span class="number">2</span>) &#123;</span><br><span class="line">    <span class="keyword">return</span> arr;</span><br><span class="line">  &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">    <span class="keyword">const</span> pivot = arr.splice(<span class="built_in">Math</span>.floor(arr.length / <span class="number">2</span>), <span class="number">1</span>)[<span class="number">0</span>];</span><br><span class="line">    <span class="keyword">let</span> less = [],</span><br><span class="line">      greater = [];</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">let</span> i = <span class="number">0</span>; i &lt; arr.length; i++) &#123;</span><br><span class="line">      <span class="keyword">if</span> (arr[i] &lt;= pivot) &#123;</span><br><span class="line">        less.push(arr[i]);</span><br><span class="line">      &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">        greater.push(arr[i]);</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> quickSort(less).concat([pivot], quickSort(greater)); <span class="comment">//  结果将存储在这里</span></span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="built_in">console</span>.log(<span class="built_in">JSON</span>.stringify(quickSort([<span class="number">3</span>, <span class="number">5</span>, <span class="number">1</span>, <span class="number">4</span>])));</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>技术</category>
+        <category>算法</category>
+      </categories>
+      <tags>
+        <tag>算法</tag>
+        <tag>排序</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>使用jieba库进行中文分词</title>
-    <url>/2019/05/18/%E4%BD%BF%E7%94%A8jieba%E5%BA%93%E8%BF%9B%E8%A1%8C%E4%B8%AD%E6%96%87%E5%88%86%E8%AF%8D/</url>
+    <url>/Blog/2019/05/18/%E4%BD%BF%E7%94%A8jieba%E5%BA%93%E8%BF%9B%E8%A1%8C%E4%B8%AD%E6%96%87%E5%88%86%E8%AF%8D/</url>
     <content><![CDATA[<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># coding=utf-8</span></span><br><span class="line"><span class="keyword">import</span> xlwt  <span class="comment"># 写入excel库</span></span><br><span class="line"><span class="keyword">import</span> jieba.analyse</span><br><span class="line"><span class="keyword">import</span> jieba</span><br><span class="line"><span class="keyword">import</span> xlrd</span><br><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line"></span><br><span class="line"><span class="comment"># 将文本编码转换为utf-8格式</span></span><br><span class="line"><span class="keyword">import</span> sys</span><br><span class="line">reload(sys)</span><br><span class="line">sys.setdefaultencoding(<span class="string">'utf-8'</span>)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment"># excel转变为文本</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">excel2txt</span><span class="params">(file_path)</span>:</span></span><br><span class="line">    data = xlrd.open_workbook(</span><br><span class="line">        file_path, encoding_override=<span class="string">'utf-8'</span>)  <span class="comment"># 打开Excel文件读取数据</span></span><br><span class="line">    sh = data.sheet_by_name(<span class="string">"Sheet1"</span>)  <span class="comment"># 通过工作簿名称获取</span></span><br><span class="line">    n = <span class="number">0</span></span><br><span class="line">    i = <span class="number">0</span></span><br><span class="line">    file = open(<span class="string">"temp.txt"</span>, <span class="string">"w"</span>)</span><br><span class="line">    <span class="keyword">for</span> n <span class="keyword">in</span> range(sh.nrows):</span><br><span class="line">        <span class="keyword">for</span> i <span class="keyword">in</span> range(sh.ncols):</span><br><span class="line">            text = sh.cell_value(n, i).encode(<span class="string">'utf-8'</span>)</span><br><span class="line">            file.write(text)</span><br><span class="line">            file.write(<span class="string">'\n'</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 结巴词频分析</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">jieba_analyse</span><span class="params">()</span>:</span></span><br><span class="line">    <span class="keyword">if</span> __name__ == <span class="string">"__main__"</span>:</span><br><span class="line">        wbk = xlwt.Workbook(encoding=<span class="string">'ascii'</span>)</span><br><span class="line">        sheet = wbk.add_sheet(<span class="string">"wordCount"</span>)  <span class="comment"># Excel单元格名字</span></span><br><span class="line">        word_lst = []</span><br><span class="line">        key_list = []</span><br><span class="line">        <span class="keyword">for</span> line <span class="keyword">in</span> open(<span class="string">'temp.txt'</span>):  <span class="comment"># 1.txt是需要分词统计的文档</span></span><br><span class="line"></span><br><span class="line">            item = line.strip(<span class="string">'\n\r'</span>).split(<span class="string">'\t'</span>)  <span class="comment"># 制表格切分</span></span><br><span class="line">            <span class="comment"># print item</span></span><br><span class="line">            tags = jieba.analyse.extract_tags(item[<span class="number">0</span>])  <span class="comment"># jieba分词</span></span><br><span class="line">            <span class="keyword">for</span> t <span class="keyword">in</span> tags:</span><br><span class="line">                word_lst.append(t)</span><br><span class="line"></span><br><span class="line">        word_dict = &#123;&#125;</span><br><span class="line">        <span class="keyword">with</span> open(<span class="string">"wordCount.txt"</span>, <span class="string">'w'</span>) <span class="keyword">as</span> wf2:  <span class="comment"># 打开文件</span></span><br><span class="line"></span><br><span class="line">            <span class="keyword">for</span> item <span class="keyword">in</span> word_lst:</span><br><span class="line">                <span class="keyword">if</span> item <span class="keyword">not</span> <span class="keyword">in</span> word_dict:  <span class="comment"># 统计数量</span></span><br><span class="line">                    word_dict[item] = <span class="number">1</span></span><br><span class="line">                <span class="keyword">else</span>:</span><br><span class="line">                    word_dict[item] += <span class="number">1</span></span><br><span class="line"></span><br><span class="line">            orderList = list(word_dict.values())</span><br><span class="line">            orderList.sort(reverse=<span class="literal">True</span>)</span><br><span class="line">            <span class="comment"># print orderList</span></span><br><span class="line">            <span class="keyword">for</span> i <span class="keyword">in</span> range(len(orderList)):</span><br><span class="line">                <span class="keyword">for</span> key <span class="keyword">in</span> word_dict:</span><br><span class="line">                    <span class="keyword">if</span> word_dict[key] == orderList[i]:</span><br><span class="line">                        <span class="comment"># 写入txt文档</span></span><br><span class="line">                        wf2.write(key + <span class="string">' '</span> + str(word_dict[key]) + <span class="string">'\n'</span>)</span><br><span class="line">                        key_list.append(key)</span><br><span class="line">                        word_dict[key] = <span class="number">0</span></span><br><span class="line"></span><br><span class="line">        <span class="keyword">for</span> i <span class="keyword">in</span> range(len(key_list)):</span><br><span class="line">            sheet.write(i, <span class="number">1</span>, label=orderList[i])</span><br><span class="line">            sheet.write(i, <span class="number">0</span>, label=key_list[i])</span><br><span class="line">        wbk.save(<span class="string">'wordCount.xls'</span>)  <span class="comment"># 保存为 wordCount.xls文件</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 要分析的xlsx表</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">analyse_word</span><span class="params">(file_path)</span>:</span></span><br><span class="line">    excel2txt(file_path)</span><br><span class="line">    jieba_analyse()</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">analyse_word(<span class="string">'data2.xlsx'</span>)</span><br></pre></td></tr></table></figure>
 ]]></content>
       <categories>
@@ -647,7 +748,7 @@
   </entry>
   <entry>
     <title>如何面试前端</title>
-    <url>/2020/01/10/%E5%A6%82%E4%BD%95%E9%9D%A2%E8%AF%95%E5%89%8D%E7%AB%AF/</url>
+    <url>/Blog/2020/01/10/%E5%A6%82%E4%BD%95%E9%9D%A2%E8%AF%95%E5%89%8D%E7%AB%AF/</url>
     <content><![CDATA[<h1 id="如何面试前端"><a href="#如何面试前端" class="headerlink" title="如何面试前端"></a>如何面试前端</h1><ol>
 <li><p>明确招聘目标</p>
 <ul>
@@ -706,109 +807,27 @@
       </tags>
   </entry>
   <entry>
-    <title>广州出差总结</title>
-    <url>/2019/10/14/%E5%B9%BF%E5%B7%9E%E5%87%BA%E5%B7%AE%E6%80%BB%E7%BB%93/</url>
-    <content><![CDATA[<h1 id="广州出差总结"><a href="#广州出差总结" class="headerlink" title="广州出差总结"></a>广州出差总结</h1><ol>
-<li><p>一个糟糕的项目架构会将这种糟糕一直延续下去。</p>
-<ul>
-<li><p>难懂</p>
-</li>
-<li><p>难以变动</p>
-</li>
-</ul>
-<p>（1）webpack 构建工具没有搭建</p>
-<p>（2）混用 react 和 jquery</p>
-<p>（3）没有开发规范</p>
-<p>（4）没有开发文档</p>
-<p>（5）没有完善的工具链</p>
-</li>
-<li><p>学无边界，要加强基础知识的学习。</p>
-</li>
-<li><p>复杂度高，代码量多的项目应该多考虑设计模式。</p>
-</li>
-<li><p>事先设计。</p>
-</li>
-<li><p>加强业务学习。</p>
-</li>
-<li><p>大公司没有想象中的那么美好。</p>
-</li>
-</ol>
-]]></content>
-      <categories>
-        <category>工作</category>
-      </categories>
-      <tags>
-        <tag>总结</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>小程序缓存API解决方案</title>
-    <url>/2019/11/27/%E5%B0%8F%E7%A8%8B%E5%BA%8F%E7%BC%93%E5%AD%98API%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/</url>
-    <content><![CDATA[<p>为了避免给服务器造成过大压力，造成资源浪费，我们可以将一些 API 数据缓存在客户端本机中。这种缓存的对象应该具有以下特点：</p>
-<ol>
-<li>数据量少。</li>
-<li>及时性要求不高，不需要实时更新。</li>
-<li>数据较为固定。</li>
-</ol>
-<p>对于缓存 API 的方案，分为两种。一是单独封装工具供开发者调用，二是在 http 请求工具中使用缓存代理</p>
-<h2 id="单独封装工具"><a href="#单独封装工具" class="headerlink" title="单独封装工具"></a>单独封装工具</h2><figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">const</span> cacheTool = &#123;</span><br><span class="line">  <span class="comment">/**</span></span><br><span class="line"><span class="comment">   *</span></span><br><span class="line"><span class="comment">   * <span class="doctag">@param <span class="type">&#123;string&#125;</span> </span>key 键名</span></span><br><span class="line"><span class="comment">   * <span class="doctag">@param <span class="type">&#123;any&#125;</span> </span>data 缓存的数据</span></span><br><span class="line"><span class="comment">   * <span class="doctag">@param <span class="type">&#123;number&#125;</span> </span>second 需要缓存的时间，以秒为单位</span></span><br><span class="line"><span class="comment">   */</span></span><br><span class="line">  setItem: <span class="function"><span class="keyword">function</span> (<span class="params">key, data, second</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">const</span> expireTime = <span class="keyword">new</span> <span class="built_in">Date</span>().getTime() + <span class="built_in">Number</span>(second) * <span class="number">1000</span>;</span><br><span class="line">    wx.setStorageSync(key, &#123; data, expireTime &#125;);</span><br><span class="line">  &#125;,</span><br><span class="line">  getItem: <span class="function"><span class="keyword">function</span> (<span class="params">key</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">if</span> (_this._isSet(key)) &#123;</span><br><span class="line">      <span class="keyword">const</span> isNotExpire = <span class="keyword">new</span> <span class="built_in">Date</span>().getTime() &lt;= cache.expireTime;</span><br><span class="line">      <span class="keyword">if</span> (isNotExpire) &#123;</span><br><span class="line">        <span class="keyword">const</span> cache = wx.getStorageSync(key);</span><br><span class="line">        <span class="keyword">return</span> &#123; <span class="attr">valid</span>: <span class="literal">true</span>, <span class="attr">data</span>: cache.data &#125;;</span><br><span class="line">      &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">        <span class="keyword">return</span> &#123; <span class="attr">valid</span>: <span class="literal">false</span> &#125;;</span><br><span class="line">      &#125;</span><br><span class="line">    &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">      <span class="keyword">return</span> &#123; <span class="attr">valid</span>: <span class="literal">false</span> &#125;;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;,</span><br><span class="line">  _isSet: <span class="function"><span class="keyword">function</span> (<span class="params">key</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">const</span> cache = wx.getStorageSync(key);</span><br><span class="line">    <span class="keyword">return</span> cache !== <span class="string">""</span>;</span><br><span class="line">  &#125;,</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+    <title>表单验证工具</title>
+    <url>/Blog/2019/10/10/%E8%A1%A8%E5%8D%95%E9%AA%8C%E8%AF%81%E5%B7%A5%E5%85%B7/</url>
+    <content><![CDATA[<h1 id="表单验证工具"><a href="#表单验证工具" class="headerlink" title="表单验证工具"></a>表单验证工具</h1><h2 id="实现思路"><a href="#实现思路" class="headerlink" title="实现思路"></a>实现思路</h2><p>​ 对于表单需要校验的内容，参考<code>element-ui</code>和<code>ant-design</code>实现对是否必填、字符长度、大小、正则、类型校验。其中，类型包括<code>integer、number、string、bool</code>等。校验工具将会把校验结果返回。</p>
+<p>​ 对于所有表单数据的一次性校验，只需要传入所有的表单数据和校验规则，校验工具将会返回校验结果。</p>
+<p>​ 对于表单某输入项的实时校验，只需要在光标移出输入框时使用校验工具校验。此时传入所有表单的数据、校验规则、以及该项对应的字段名。校验工具将会过滤掉 required（必输校验）。最终返回校验规则</p>
+<h2 id="实现代码"><a href="#实现代码" class="headerlink" title="实现代码"></a>实现代码</h2><figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="comment">/***</span></span><br><span class="line"><span class="comment"> * (一)校验示例</span></span><br><span class="line"><span class="comment"> * let stu = &#123;name:'',phone:''&#125;;</span></span><br><span class="line"><span class="comment"> * let rules = &#123;</span></span><br><span class="line"><span class="comment"> *  name:[&#123;required:true, message:'请输入名称'&#125;, &#123;minLength:2, maxLength:5, message:'姓名长度在2-5个字符'&#125;],</span></span><br><span class="line"><span class="comment"> *  phone:[&#123;required:true, message:'请输入手机号'&#125;, &#123;pattern: /^1[34578]\d&#123;9&#125;$/,message:'请输入正确的手机号!'&#125;]</span></span><br><span class="line"><span class="comment"> * &#125;</span></span><br><span class="line"><span class="comment"> * // 校验全部表单数据</span></span><br><span class="line"><span class="comment"> * let validateRes = validateForm(stu, rules);</span></span><br><span class="line"><span class="comment"> *</span></span><br><span class="line"><span class="comment"> * // 校验某个字段</span></span><br><span class="line"><span class="comment"> * let validateRes = validateForm(stu, rules, 'name');</span></span><br><span class="line"><span class="comment"> *</span></span><br><span class="line"><span class="comment"> * (二)支持校验规则</span></span><br><span class="line"><span class="comment"> * 1. 是否必填 required:true|false(message是指不符合规则的提示信息))</span></span><br><span class="line"><span class="comment"> * 2. 字符长度校验 minLength:3|maxLength:10(包括3和10)</span></span><br><span class="line"><span class="comment"> * 3. 数字大小校验 min:3|max:10(包括3和10)</span></span><br><span class="line"><span class="comment"> * 4. 正则校验 pattern:/^1[34578]\d&#123;9&#125;$/ (注意表单输入的都是字符串)</span></span><br><span class="line"><span class="comment"> * 5. 类型校验 type:"integer"|"number"|"string"|"bool"</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"></span><br><span class="line"><span class="comment">/************************ 校验策略对象 ******************************/</span></span><br><span class="line"><span class="keyword">const</span> strategies = &#123;</span><br><span class="line">  required: <span class="function"><span class="keyword">function</span> (<span class="params">val, isRequired</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">if</span> (isRequired) &#123;</span><br><span class="line">      <span class="keyword">return</span> val.length &gt; <span class="number">0</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">  &#125;,</span><br><span class="line">  minLength: <span class="function"><span class="keyword">function</span> (<span class="params">val, minLen</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">if</span> (val.length &gt; <span class="number">0</span>) &#123;</span><br><span class="line">      <span class="keyword">return</span> val.length &gt;= minLen;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">  &#125;,</span><br><span class="line">  maxLength: <span class="function"><span class="keyword">function</span> (<span class="params">val, maxLen</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">if</span> (val.length &gt; <span class="number">0</span>) &#123;</span><br><span class="line">      <span class="keyword">return</span> val.length &lt;= maxLen;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">  &#125;,</span><br><span class="line">  min: <span class="function"><span class="keyword">function</span> (<span class="params">val, minNum</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">if</span> (val.length &gt; <span class="number">0</span>) &#123;</span><br><span class="line">      <span class="keyword">return</span> <span class="built_in">Number</span>(val) &gt;= minNum;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">  &#125;,</span><br><span class="line">  max: <span class="function"><span class="keyword">function</span> (<span class="params">val, maxNum</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">if</span> (val.length &gt; <span class="number">0</span>) &#123;</span><br><span class="line">      <span class="keyword">return</span> <span class="built_in">Number</span>(val) &lt;= maxNum;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">  &#125;,</span><br><span class="line">  pattern: <span class="function"><span class="keyword">function</span> (<span class="params">val, patternRule</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">if</span> (val.length &gt; <span class="number">0</span>) &#123;</span><br><span class="line">      <span class="keyword">return</span> patternRule.test(val);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">  &#125;,</span><br><span class="line">  type: <span class="function"><span class="keyword">function</span> (<span class="params">val, valType</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">if</span> (val.length &gt; <span class="number">0</span>) &#123;</span><br><span class="line">      <span class="keyword">let</span> isRequiredValType = <span class="literal">false</span>;</span><br><span class="line">      <span class="keyword">switch</span> (valType) &#123;</span><br><span class="line">        <span class="keyword">case</span> <span class="string">"integer"</span>:</span><br><span class="line">          <span class="keyword">if</span> (<span class="built_in">parseInt</span>(val) === <span class="built_in">Number</span>(val) &amp;&amp; val.indexOf(<span class="string">"."</span>) === <span class="number">-1</span>) &#123;</span><br><span class="line">            isRequiredValType = <span class="literal">true</span>;</span><br><span class="line">          &#125;</span><br><span class="line">          <span class="keyword">break</span>;</span><br><span class="line">        <span class="keyword">case</span> <span class="string">"number"</span>:</span><br><span class="line">          <span class="keyword">if</span> (<span class="built_in">parseFloat</span>(val).toString() !== <span class="string">"NaN"</span>) &#123;</span><br><span class="line">            isRequiredValType = <span class="literal">true</span>;</span><br><span class="line">          &#125;</span><br><span class="line">        <span class="keyword">default</span>:</span><br><span class="line">          <span class="keyword">if</span> (<span class="keyword">typeof</span> val === valType) &#123;</span><br><span class="line">            isRequiredValType = <span class="literal">true</span>;</span><br><span class="line">          &#125;</span><br><span class="line">      &#125;</span><br><span class="line">      <span class="keyword">return</span> isRequiredValType;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">  &#125;,</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="comment">/*******************************  Validator类 ***************************************/</span></span><br><span class="line"><span class="keyword">let</span> Validator = <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="keyword">this</span>.cache = [];</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 挑选校验规则</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line">Validator.prototype.add = <span class="function"><span class="keyword">function</span> (<span class="params">rules</span>) </span>&#123;</span><br><span class="line">  <span class="keyword">const</span> _this = <span class="keyword">this</span>;</span><br><span class="line">  rules.forEach(<span class="function"><span class="keyword">function</span> (<span class="params">item</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">let</span> i <span class="keyword">in</span> item) &#123;</span><br><span class="line">      <span class="keyword">if</span> (strategies.hasOwnProperty(i)) &#123;</span><br><span class="line">        <span class="keyword">const</span> validateGroup = &#123;&#125;;</span><br><span class="line">        validateGroup[i] = item[i];</span><br><span class="line">        validateGroup[<span class="string">"message"</span>] = item[<span class="string">"message"</span>];</span><br><span class="line">        _this.cache.push(validateGroup);</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;);</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 开始校验</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line">Validator.prototype.start = <span class="function"><span class="keyword">function</span> (<span class="params">curData</span>) </span>&#123;</span><br><span class="line">  <span class="keyword">const</span> _cache = <span class="keyword">this</span>.cache;</span><br><span class="line">  <span class="keyword">for</span> (<span class="keyword">let</span> i = <span class="number">0</span>; i &lt; _cache.length; i++) &#123;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">let</span> j <span class="keyword">in</span> _cache[i]) &#123;</span><br><span class="line">      <span class="keyword">if</span> (strategies.hasOwnProperty(j)) &#123;</span><br><span class="line">        <span class="keyword">if</span> (!strategies[j](curData, <span class="keyword">this</span>.cache[i][j])) &#123;</span><br><span class="line">          <span class="keyword">return</span> &#123; <span class="attr">flag</span>: <span class="literal">false</span>, <span class="attr">message</span>: <span class="keyword">this</span>.cache[i][<span class="string">"message"</span>] &#125;;</span><br><span class="line">        &#125;</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">return</span> &#123; <span class="attr">flag</span>: <span class="literal">true</span> &#125;;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="comment">/************************************ 环境调用 **************************************/</span></span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 深拷贝对象数组</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param <span class="type">&#123;arr&#125;</span> </span>source 数组</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">const</span> deepCopy = <span class="function"><span class="keyword">function</span> (<span class="params">source</span>) </span>&#123;</span><br><span class="line">  <span class="keyword">const</span> arr = source.map(<span class="function"><span class="keyword">function</span> (<span class="params">item</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">let</span> obj = &#123;&#125;;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">let</span> i <span class="keyword">in</span> item) &#123;</span><br><span class="line">      obj[i] = item[i];</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> obj;</span><br><span class="line">  &#125;);</span><br><span class="line">  <span class="keyword">return</span> arr;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 过滤子项规则，去除required</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param <span class="type">&#123;obj&#125;</span> </span>allRules 所有规则</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param <span class="type">&#123;string&#125;</span> </span>prop 需要获取的规则的子项</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">const</span> getItemRules = <span class="function"><span class="keyword">function</span> (<span class="params">allRules, prop</span>) </span>&#123;</span><br><span class="line">  <span class="keyword">let</span> ValidateItemRules = deepCopy(allRules[prop]);</span><br><span class="line">  <span class="keyword">let</span> validateItemRulesWithoutRequired = ValidateItemRules.filter(<span class="function"><span class="keyword">function</span> (<span class="params">item</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> !item.hasOwnProperty(<span class="string">"required"</span>);</span><br><span class="line">  &#125;);</span><br><span class="line">  <span class="keyword">return</span> validateItemRulesWithoutRequired;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 获取表单中的数据子项</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param <span class="type">&#123;obj&#125;</span> </span>allData 所有表单数据</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param <span class="type">&#123;string&#125;</span> </span>prop 需要获取的表单子项</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">const</span> getItemData = <span class="function"><span class="keyword">function</span> (<span class="params">allData, prop</span>) </span>&#123;</span><br><span class="line">  <span class="keyword">const</span> data = <span class="built_in">JSON</span>.parse(<span class="built_in">JSON</span>.stringify(allData));</span><br><span class="line">  <span class="keyword">return</span> data[prop].toString().trim();</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> *</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param <span class="type">&#123;string&#125;</span> </span>data 校验数据</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param <span class="type">&#123;obj&#125;</span> </span>rules 校验规则</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">const</span> runValidator = <span class="function"><span class="keyword">function</span> (<span class="params">data, rules</span>) </span>&#123;</span><br><span class="line">  <span class="keyword">const</span> validator = <span class="keyword">new</span> Validator();</span><br><span class="line">  validator.add(rules);</span><br><span class="line">  <span class="keyword">return</span> validator.start(data);</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 校验表单</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param <span class="type">&#123;obj&#125;</span> </span>data 表单数据</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param <span class="type">&#123;obj&#125;</span> </span>validateRules 表单校验规则</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param <span class="type">&#123;string&#125;</span> </span>prop 需要校验的子项字段</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">const</span> validateForm = <span class="function"><span class="keyword">function</span> (<span class="params">data, validateRules, prop</span>) </span>&#123;</span><br><span class="line">  <span class="keyword">if</span> (prop) &#123;</span><br><span class="line">    <span class="keyword">const</span> curData = getItemData(data, prop);</span><br><span class="line">    <span class="keyword">const</span> rules = getItemRules(validateRules, prop);</span><br><span class="line">    <span class="keyword">if</span> (rules) &#123;</span><br><span class="line">      <span class="keyword">const</span> validateRes = runValidator(curData, rules);</span><br><span class="line">      <span class="keyword">if</span> (!validateRes.flag) &#123;</span><br><span class="line">        <span class="keyword">return</span> &#123; <span class="attr">flag</span>: <span class="literal">false</span>, <span class="attr">name</span>: prop, <span class="attr">data</span>: curData, <span class="attr">message</span>: validateRes.message &#125;;</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> &#123; <span class="attr">flag</span>: <span class="literal">true</span> &#125;;</span><br><span class="line">  &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">let</span> i <span class="keyword">in</span> data) &#123;</span><br><span class="line">      <span class="keyword">const</span> rules = validateRules[i];</span><br><span class="line">      <span class="keyword">const</span> curData = data[i].toString().trim();</span><br><span class="line">      <span class="keyword">if</span> (rules) &#123;</span><br><span class="line">        <span class="keyword">const</span> validateRes = runValidator(curData, rules);</span><br><span class="line">        <span class="keyword">if</span> (!validateRes.flag) &#123;</span><br><span class="line">          <span class="keyword">return</span> &#123; <span class="attr">flag</span>: <span class="literal">false</span>, <span class="attr">name</span>: i, <span class="attr">data</span>: data[i], <span class="attr">message</span>: validateRes.message &#125;;</span><br><span class="line">        &#125;</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> &#123; <span class="attr">flag</span>: <span class="literal">true</span> &#125;;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="built_in">module</span>.exports = validateForm;</span><br></pre></td></tr></table></figure>
 
-<p>调用</p>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">const</span> cache = cacheTool.getItem(<span class="string">"name"</span>);</span><br><span class="line"><span class="keyword">if</span> (cache.valid) &#123;</span><br><span class="line">  <span class="keyword">this</span>.setData(&#123;</span><br><span class="line">    list: cache.data,</span><br><span class="line">  &#125;);</span><br><span class="line">&#125; <span class="keyword">else</span> &#123;</span><br><span class="line">  <span class="comment">//	http request</span></span><br><span class="line">  <span class="comment">// ...</span></span><br><span class="line">  cacheTool.setItem(<span class="string">"name"</span>, data, <span class="number">600</span>); <span class="comment">// 设置10分钟缓存</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h2 id="在-http-工具中使用缓存代理"><a href="#在-http-工具中使用缓存代理" class="headerlink" title="在 http 工具中使用缓存代理"></a>在 http 工具中使用缓存代理</h2><figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="comment">//	https.js</span></span><br><span class="line"><span class="comment">//  <span class="doctag">TODO:</span>仍需改进</span></span><br><span class="line"><span class="keyword">const</span> baseURL = <span class="string">"https://nufm.dfcfw.com/EM_Finance2014NumericApplication"</span>;</span><br><span class="line"><span class="keyword">const</span> cacheTool = <span class="built_in">require</span>(<span class="string">"../util/cacheTool.js"</span>);</span><br><span class="line"><span class="keyword">const</span> http = <span class="function">(<span class="params">&#123; url, data, method = <span class="string">"get"</span>, cache = <span class="literal">false</span>, expire = <span class="number">600</span>, cacheKey = <span class="string">"_"</span> &#125;</span>) =&gt;</span> &#123;</span><br><span class="line">  <span class="keyword">return</span> <span class="keyword">new</span> <span class="built_in">Promise</span>(<span class="function">(<span class="params">resolve, reject</span>) =&gt;</span> &#123;</span><br><span class="line">    <span class="keyword">if</span> (cache) &#123;</span><br><span class="line">      <span class="keyword">const</span> cache = cacheTool.getItem(cacheKey);</span><br><span class="line">      <span class="keyword">if</span> (cache.valid) &#123;</span><br><span class="line">        resolve(cache.data);</span><br><span class="line">      &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">        httpRequest(url, data, method, cache, expire, cacheKey)</span><br><span class="line">          .then(<span class="function">(<span class="params">res</span>) =&gt;</span> &#123;</span><br><span class="line">            resolve(res);</span><br><span class="line">          &#125;)</span><br><span class="line">          .catch(<span class="function">(<span class="params">err</span>) =&gt;</span> &#123;</span><br><span class="line">            reject(err);</span><br><span class="line">          &#125;);</span><br><span class="line">      &#125;</span><br><span class="line">    &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">      httpRequest(url, data, method, cache)</span><br><span class="line">        .then(<span class="function">(<span class="params">res</span>) =&gt;</span> &#123;</span><br><span class="line">          resolve(res);</span><br><span class="line">        &#125;)</span><br><span class="line">        .catch(<span class="function">(<span class="params">err</span>) =&gt;</span> &#123;</span><br><span class="line">          reject(err);</span><br><span class="line">        &#125;);</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;);</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> httpRequest = <span class="function">(<span class="params">url, data, method, cache, expire, cacheKey</span>) =&gt;</span> &#123;</span><br><span class="line">  <span class="keyword">return</span> <span class="keyword">new</span> <span class="built_in">Promise</span>(<span class="function">(<span class="params">resolve, reject</span>) =&gt;</span> &#123;</span><br><span class="line">    wx.request(&#123;</span><br><span class="line">      url: <span class="string">`<span class="subst">$&#123;baseURL&#125;</span>/<span class="subst">$&#123;url&#125;</span>`</span>,</span><br><span class="line">      data,</span><br><span class="line">      method,</span><br><span class="line">      header: &#123;</span><br><span class="line">        <span class="string">"content-type"</span>: <span class="string">"application-json"</span>,</span><br><span class="line">      &#125;,</span><br><span class="line">      complete: <span class="function"><span class="keyword">function</span> (<span class="params">res</span>) </span>&#123;</span><br><span class="line">        <span class="keyword">if</span> (res.statusCode &gt;= <span class="number">200</span> &amp;&amp; res.statusCode &lt; <span class="number">300</span>) &#123;</span><br><span class="line">          <span class="keyword">if</span> (cache) &#123;</span><br><span class="line">            cacheTool.setItem(cacheKey, res, expire);</span><br><span class="line">          &#125;</span><br><span class="line">          resolve(res.data);</span><br><span class="line">        &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">          reject(res);</span><br><span class="line">        &#125;</span><br><span class="line">      &#125;,</span><br><span class="line">    &#125;);</span><br><span class="line">  &#125;);</span><br><span class="line">&#125;;</span><br><span class="line"><span class="built_in">module</span>.exports = http;</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="comment">//	调用</span></span><br><span class="line">http(&#123;</span><br><span class="line">  url:</span><br><span class="line">    <span class="string">"JS.aspx?type=CT&amp;cmd=BK04781&amp;sty=DCFFMBFMS&amp;st=&amp;sr=&amp;p=&amp;ps=&amp;cb=&amp;js=result37523225((x))&amp;token=0b9469e9fdfd123fcec4532ae1c20f4f&amp;callback=result37523225&amp;_=1574835480421"</span>,</span><br><span class="line">  cache: <span class="literal">true</span>,</span><br><span class="line">  expire: <span class="number">10</span>,</span><br><span class="line">  cacheKey: <span class="string">"test"</span>,</span><br><span class="line">  data: <span class="string">"book_id=947&amp;4id=914372&amp;sky=fd732789509e52a2169d58f8959af7c8&amp;t=1574836186&amp;_type=ajax&amp;rndval=1574834470633"</span>,</span><br><span class="line">&#125;).then(<span class="function">(<span class="params">res</span>) =&gt;</span> &#123;</span><br><span class="line">  <span class="built_in">console</span>.log(<span class="string">"res"</span>, <span class="built_in">JSON</span>.stringify(res));</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+<p>​</p>
 ]]></content>
       <categories>
         <category>技术</category>
         <category>前端</category>
       </categories>
       <tags>
-        <tag>小程序</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>引用豆瓣图片在手机上失效</title>
-    <url>/2019/05/10/%E5%BC%95%E7%94%A8%E8%B1%86%E7%93%A3%E5%9B%BE%E7%89%87%E5%9C%A8%E6%89%8B%E6%9C%BA%E4%B8%8A%E5%A4%B1%E6%95%88/</url>
-    <content><![CDATA[<h2 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a>问题描述</h2><p>在做一个个人页面时，引用了豆瓣读书里面书籍封面图片。但是出现一个现象:在 web 端可以显示的图片，在手机上却不能正确的加载出来。</p>
-<h2 id="原因"><a href="#原因" class="headerlink" title="原因"></a>原因</h2><p>豆瓣 API 请求是有限制的，约为每分钟 40 次，超过了这个次数就要被限制，限制为每分钟 10 次。所以，如果网页上引用了大量的豆瓣图片，那么，一次可能会加载出一些，但是加载不出来全部。特别是刷新之后，确定为同一源头发起的请求之后，大量的图片将请求不到。</p>
-<h2 id="解决方法"><a href="#解决方法" class="headerlink" title="解决方法"></a>解决方法</h2><p>使用图片缓存方法，使用<code>https://images.weserv.nl/?url=</code>再加上原来豆瓣图片地址去掉<code>https://</code>的链接，即可访问。</p>
-<p>具体:</p>
-<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="comment">//	原来</span></span><br><span class="line">https:<span class="comment">//img3.doubanio.com/view/subject/l/public/s2955123.jpg</span></span><br><span class="line"><span class="comment">//	修改后</span></span><br><span class="line">https:<span class="comment">//images.weserv.nl/?url=img3.doubanio.com/view/subject/l/public/s2955123.jpg</span></span><br></pre></td></tr></table></figure>
-]]></content>
-      <categories>
-        <category>技术</category>
-      </categories>
-      <tags>
-        <tag>问题</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>快速排序的思路与方法</title>
-    <url>/2019/04/03/%E5%BF%AB%E9%80%9F%E6%8E%92%E5%BA%8F%E7%9A%84%E6%80%9D%E8%B7%AF%E4%B8%8E%E6%96%B9%E6%B3%95/</url>
-    <content><![CDATA[<h1 id="快速排序算法的思路与实现-js-语言"><a href="#快速排序算法的思路与实现-js-语言" class="headerlink" title="快速排序算法的思路与实现(js 语言)"></a>快速排序算法的思路与实现(js 语言)</h1><h2 id="D-amp-C-divide-and-conquer-分而治之"><a href="#D-amp-C-divide-and-conquer-分而治之" class="headerlink" title="D&amp;C(divide and conquer) 分而治之"></a>D&amp;C(divide and conquer) 分而治之</h2><p>d&amp;c 是一种递归式解决问题的方法(思路)，使用 d&amp;c 解决问题分为两个步骤:1. 找出基线条件(不再递归的条件),这种条件应该尽可能的简单。 2. 不断将问题分解(或者说缩小规模)，直到符合基线条件</p>
-<h2 id="逻辑"><a href="#逻辑" class="headerlink" title="逻辑"></a>逻辑</h2><p>如果一个数组是已经排好序的数组，那个在这个数组中任选一个元素，元素左边的元素将会小于等于该元素，元素所有右边的元素将会大于等于该元素。</p>
-<p>我们依据该元素，可以对一个无序数组做如下操作。任选一个元素，循环该无需数组，声明两个数组变量，一个是 less,一个是 greater,我们把小于该元素的数放入 less 数组中，把大于该元素放入 greater 中，那个便满足了以上的逻辑。接下来，我们再从 less 数组中选取一个元素，执行如上操作，使得 less 数组又分为两组，一组比选中元素小，一组比选中元素大。对 greater 数组也同样操作。这样下来，最后我们得到的就是一个有序的数组。</p>
-<h2 id="步骤"><a href="#步骤" class="headerlink" title="步骤"></a>步骤</h2><ol>
-<li>找基准值(pivot)</li>
-<li>分区(partitioning):找出比基准值以及比基准值大的元素 =&gt; 数组划分为:一个小于基准值的子数组,基准值,一个大于基准值的子数组</li>
-<li>递归</li>
-</ol>
-<h2 id="代码实现"><a href="#代码实现" class="headerlink" title="代码实现"></a>代码实现</h2><figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">quickSort</span>(<span class="params">arr</span>) </span>&#123;</span><br><span class="line">  <span class="keyword">if</span> (arr.length &lt; <span class="number">2</span>) &#123;</span><br><span class="line">    <span class="keyword">return</span> arr;</span><br><span class="line">  &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">    <span class="keyword">const</span> pivot = arr.splice(<span class="built_in">Math</span>.floor(arr.length / <span class="number">2</span>), <span class="number">1</span>)[<span class="number">0</span>];</span><br><span class="line">    <span class="keyword">let</span> less = [],</span><br><span class="line">      greater = [];</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">let</span> i = <span class="number">0</span>; i &lt; arr.length; i++) &#123;</span><br><span class="line">      <span class="keyword">if</span> (arr[i] &lt;= pivot) &#123;</span><br><span class="line">        less.push(arr[i]);</span><br><span class="line">      &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">        greater.push(arr[i]);</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> quickSort(less).concat([pivot], quickSort(greater)); <span class="comment">//  结果将存储在这里</span></span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="built_in">console</span>.log(<span class="built_in">JSON</span>.stringify(quickSort([<span class="number">3</span>, <span class="number">5</span>, <span class="number">1</span>, <span class="number">4</span>])));</span><br></pre></td></tr></table></figure>
-]]></content>
-      <categories>
-        <category>技术</category>
-        <category>算法</category>
-      </categories>
-      <tags>
-        <tag>算法</tag>
-        <tag>排序</tag>
+        <tag>JavaScript</tag>
+        <tag>表单</tag>
       </tags>
   </entry>
   <entry>
     <title>网络信息资源检索</title>
-    <url>/2019/01/15/%E7%BD%91%E7%BB%9C%E4%BF%A1%E6%81%AF%E8%B5%84%E6%BA%90%E6%A3%80%E7%B4%A2/</url>
+    <url>/Blog/2019/01/15/%E7%BD%91%E7%BB%9C%E4%BF%A1%E6%81%AF%E8%B5%84%E6%BA%90%E6%A3%80%E7%B4%A2/</url>
     <content><![CDATA[<h2 id="检索分析"><a href="#检索分析" class="headerlink" title="检索分析"></a>检索分析</h2><p>待续</p>
 <h2 id="网络引擎的运用（谷歌）"><a href="#网络引擎的运用（谷歌）" class="headerlink" title="网络引擎的运用（谷歌）"></a>网络引擎的运用（谷歌）</h2><h3 id="操作符"><a href="#操作符" class="headerlink" title="操作符"></a>操作符</h3><p><code>+</code> 强制搜索<br>由于 Google 会忽略和过滤一些常用词（称为 stop words / common words），如 and、how 等。使用+可以让搜索引擎强制包括这些词。使用+还可以强制过滤关键词变体形式（不让搜索结果出现关键词的其它形式），如单复数、动词时态、ing 形式等等。</p>
 <p><code>-</code> 逻辑非<br>用于过滤-号后面的关键词。如：MP3 -MP4，表示只搜索 MP3 而不要 MP4 的搜索结果。 -号后面没有空格。</p>
@@ -848,27 +867,8 @@
       </tags>
   </entry>
   <entry>
-    <title>表单验证工具</title>
-    <url>/2019/10/10/%E8%A1%A8%E5%8D%95%E9%AA%8C%E8%AF%81%E5%B7%A5%E5%85%B7/</url>
-    <content><![CDATA[<h1 id="表单验证工具"><a href="#表单验证工具" class="headerlink" title="表单验证工具"></a>表单验证工具</h1><h2 id="实现思路"><a href="#实现思路" class="headerlink" title="实现思路"></a>实现思路</h2><p>​ 对于表单需要校验的内容，参考<code>element-ui</code>和<code>ant-design</code>实现对是否必填、字符长度、大小、正则、类型校验。其中，类型包括<code>integer、number、string、bool</code>等。校验工具将会把校验结果返回。</p>
-<p>​ 对于所有表单数据的一次性校验，只需要传入所有的表单数据和校验规则，校验工具将会返回校验结果。</p>
-<p>​ 对于表单某输入项的实时校验，只需要在光标移出输入框时使用校验工具校验。此时传入所有表单的数据、校验规则、以及该项对应的字段名。校验工具将会过滤掉 required（必输校验）。最终返回校验规则</p>
-<h2 id="实现代码"><a href="#实现代码" class="headerlink" title="实现代码"></a>实现代码</h2><figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="comment">/***</span></span><br><span class="line"><span class="comment"> * (一)校验示例</span></span><br><span class="line"><span class="comment"> * let stu = &#123;name:'',phone:''&#125;;</span></span><br><span class="line"><span class="comment"> * let rules = &#123;</span></span><br><span class="line"><span class="comment"> *  name:[&#123;required:true, message:'请输入名称'&#125;, &#123;minLength:2, maxLength:5, message:'姓名长度在2-5个字符'&#125;],</span></span><br><span class="line"><span class="comment"> *  phone:[&#123;required:true, message:'请输入手机号'&#125;, &#123;pattern: /^1[34578]\d&#123;9&#125;$/,message:'请输入正确的手机号!'&#125;]</span></span><br><span class="line"><span class="comment"> * &#125;</span></span><br><span class="line"><span class="comment"> * // 校验全部表单数据</span></span><br><span class="line"><span class="comment"> * let validateRes = validateForm(stu, rules);</span></span><br><span class="line"><span class="comment"> *</span></span><br><span class="line"><span class="comment"> * // 校验某个字段</span></span><br><span class="line"><span class="comment"> * let validateRes = validateForm(stu, rules, 'name');</span></span><br><span class="line"><span class="comment"> *</span></span><br><span class="line"><span class="comment"> * (二)支持校验规则</span></span><br><span class="line"><span class="comment"> * 1. 是否必填 required:true|false(message是指不符合规则的提示信息))</span></span><br><span class="line"><span class="comment"> * 2. 字符长度校验 minLength:3|maxLength:10(包括3和10)</span></span><br><span class="line"><span class="comment"> * 3. 数字大小校验 min:3|max:10(包括3和10)</span></span><br><span class="line"><span class="comment"> * 4. 正则校验 pattern:/^1[34578]\d&#123;9&#125;$/ (注意表单输入的都是字符串)</span></span><br><span class="line"><span class="comment"> * 5. 类型校验 type:"integer"|"number"|"string"|"bool"</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"></span><br><span class="line"><span class="comment">/************************ 校验策略对象 ******************************/</span></span><br><span class="line"><span class="keyword">const</span> strategies = &#123;</span><br><span class="line">  required: <span class="function"><span class="keyword">function</span> (<span class="params">val, isRequired</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">if</span> (isRequired) &#123;</span><br><span class="line">      <span class="keyword">return</span> val.length &gt; <span class="number">0</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">  &#125;,</span><br><span class="line">  minLength: <span class="function"><span class="keyword">function</span> (<span class="params">val, minLen</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">if</span> (val.length &gt; <span class="number">0</span>) &#123;</span><br><span class="line">      <span class="keyword">return</span> val.length &gt;= minLen;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">  &#125;,</span><br><span class="line">  maxLength: <span class="function"><span class="keyword">function</span> (<span class="params">val, maxLen</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">if</span> (val.length &gt; <span class="number">0</span>) &#123;</span><br><span class="line">      <span class="keyword">return</span> val.length &lt;= maxLen;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">  &#125;,</span><br><span class="line">  min: <span class="function"><span class="keyword">function</span> (<span class="params">val, minNum</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">if</span> (val.length &gt; <span class="number">0</span>) &#123;</span><br><span class="line">      <span class="keyword">return</span> <span class="built_in">Number</span>(val) &gt;= minNum;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">  &#125;,</span><br><span class="line">  max: <span class="function"><span class="keyword">function</span> (<span class="params">val, maxNum</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">if</span> (val.length &gt; <span class="number">0</span>) &#123;</span><br><span class="line">      <span class="keyword">return</span> <span class="built_in">Number</span>(val) &lt;= maxNum;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">  &#125;,</span><br><span class="line">  pattern: <span class="function"><span class="keyword">function</span> (<span class="params">val, patternRule</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">if</span> (val.length &gt; <span class="number">0</span>) &#123;</span><br><span class="line">      <span class="keyword">return</span> patternRule.test(val);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">  &#125;,</span><br><span class="line">  type: <span class="function"><span class="keyword">function</span> (<span class="params">val, valType</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">if</span> (val.length &gt; <span class="number">0</span>) &#123;</span><br><span class="line">      <span class="keyword">let</span> isRequiredValType = <span class="literal">false</span>;</span><br><span class="line">      <span class="keyword">switch</span> (valType) &#123;</span><br><span class="line">        <span class="keyword">case</span> <span class="string">"integer"</span>:</span><br><span class="line">          <span class="keyword">if</span> (<span class="built_in">parseInt</span>(val) === <span class="built_in">Number</span>(val) &amp;&amp; val.indexOf(<span class="string">"."</span>) === <span class="number">-1</span>) &#123;</span><br><span class="line">            isRequiredValType = <span class="literal">true</span>;</span><br><span class="line">          &#125;</span><br><span class="line">          <span class="keyword">break</span>;</span><br><span class="line">        <span class="keyword">case</span> <span class="string">"number"</span>:</span><br><span class="line">          <span class="keyword">if</span> (<span class="built_in">parseFloat</span>(val).toString() !== <span class="string">"NaN"</span>) &#123;</span><br><span class="line">            isRequiredValType = <span class="literal">true</span>;</span><br><span class="line">          &#125;</span><br><span class="line">        <span class="keyword">default</span>:</span><br><span class="line">          <span class="keyword">if</span> (<span class="keyword">typeof</span> val === valType) &#123;</span><br><span class="line">            isRequiredValType = <span class="literal">true</span>;</span><br><span class="line">          &#125;</span><br><span class="line">      &#125;</span><br><span class="line">      <span class="keyword">return</span> isRequiredValType;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">  &#125;,</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="comment">/*******************************  Validator类 ***************************************/</span></span><br><span class="line"><span class="keyword">let</span> Validator = <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="keyword">this</span>.cache = [];</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 挑选校验规则</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line">Validator.prototype.add = <span class="function"><span class="keyword">function</span> (<span class="params">rules</span>) </span>&#123;</span><br><span class="line">  <span class="keyword">const</span> _this = <span class="keyword">this</span>;</span><br><span class="line">  rules.forEach(<span class="function"><span class="keyword">function</span> (<span class="params">item</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">let</span> i <span class="keyword">in</span> item) &#123;</span><br><span class="line">      <span class="keyword">if</span> (strategies.hasOwnProperty(i)) &#123;</span><br><span class="line">        <span class="keyword">const</span> validateGroup = &#123;&#125;;</span><br><span class="line">        validateGroup[i] = item[i];</span><br><span class="line">        validateGroup[<span class="string">"message"</span>] = item[<span class="string">"message"</span>];</span><br><span class="line">        _this.cache.push(validateGroup);</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;);</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 开始校验</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line">Validator.prototype.start = <span class="function"><span class="keyword">function</span> (<span class="params">curData</span>) </span>&#123;</span><br><span class="line">  <span class="keyword">const</span> _cache = <span class="keyword">this</span>.cache;</span><br><span class="line">  <span class="keyword">for</span> (<span class="keyword">let</span> i = <span class="number">0</span>; i &lt; _cache.length; i++) &#123;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">let</span> j <span class="keyword">in</span> _cache[i]) &#123;</span><br><span class="line">      <span class="keyword">if</span> (strategies.hasOwnProperty(j)) &#123;</span><br><span class="line">        <span class="keyword">if</span> (!strategies[j](curData, <span class="keyword">this</span>.cache[i][j])) &#123;</span><br><span class="line">          <span class="keyword">return</span> &#123; <span class="attr">flag</span>: <span class="literal">false</span>, <span class="attr">message</span>: <span class="keyword">this</span>.cache[i][<span class="string">"message"</span>] &#125;;</span><br><span class="line">        &#125;</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">return</span> &#123; <span class="attr">flag</span>: <span class="literal">true</span> &#125;;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="comment">/************************************ 环境调用 **************************************/</span></span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 深拷贝对象数组</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param <span class="type">&#123;arr&#125;</span> </span>source 数组</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">const</span> deepCopy = <span class="function"><span class="keyword">function</span> (<span class="params">source</span>) </span>&#123;</span><br><span class="line">  <span class="keyword">const</span> arr = source.map(<span class="function"><span class="keyword">function</span> (<span class="params">item</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">let</span> obj = &#123;&#125;;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">let</span> i <span class="keyword">in</span> item) &#123;</span><br><span class="line">      obj[i] = item[i];</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> obj;</span><br><span class="line">  &#125;);</span><br><span class="line">  <span class="keyword">return</span> arr;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 过滤子项规则，去除required</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param <span class="type">&#123;obj&#125;</span> </span>allRules 所有规则</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param <span class="type">&#123;string&#125;</span> </span>prop 需要获取的规则的子项</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">const</span> getItemRules = <span class="function"><span class="keyword">function</span> (<span class="params">allRules, prop</span>) </span>&#123;</span><br><span class="line">  <span class="keyword">let</span> ValidateItemRules = deepCopy(allRules[prop]);</span><br><span class="line">  <span class="keyword">let</span> validateItemRulesWithoutRequired = ValidateItemRules.filter(<span class="function"><span class="keyword">function</span> (<span class="params">item</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> !item.hasOwnProperty(<span class="string">"required"</span>);</span><br><span class="line">  &#125;);</span><br><span class="line">  <span class="keyword">return</span> validateItemRulesWithoutRequired;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 获取表单中的数据子项</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param <span class="type">&#123;obj&#125;</span> </span>allData 所有表单数据</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param <span class="type">&#123;string&#125;</span> </span>prop 需要获取的表单子项</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">const</span> getItemData = <span class="function"><span class="keyword">function</span> (<span class="params">allData, prop</span>) </span>&#123;</span><br><span class="line">  <span class="keyword">const</span> data = <span class="built_in">JSON</span>.parse(<span class="built_in">JSON</span>.stringify(allData));</span><br><span class="line">  <span class="keyword">return</span> data[prop].toString().trim();</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> *</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param <span class="type">&#123;string&#125;</span> </span>data 校验数据</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param <span class="type">&#123;obj&#125;</span> </span>rules 校验规则</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">const</span> runValidator = <span class="function"><span class="keyword">function</span> (<span class="params">data, rules</span>) </span>&#123;</span><br><span class="line">  <span class="keyword">const</span> validator = <span class="keyword">new</span> Validator();</span><br><span class="line">  validator.add(rules);</span><br><span class="line">  <span class="keyword">return</span> validator.start(data);</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 校验表单</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param <span class="type">&#123;obj&#125;</span> </span>data 表单数据</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param <span class="type">&#123;obj&#125;</span> </span>validateRules 表单校验规则</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param <span class="type">&#123;string&#125;</span> </span>prop 需要校验的子项字段</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">const</span> validateForm = <span class="function"><span class="keyword">function</span> (<span class="params">data, validateRules, prop</span>) </span>&#123;</span><br><span class="line">  <span class="keyword">if</span> (prop) &#123;</span><br><span class="line">    <span class="keyword">const</span> curData = getItemData(data, prop);</span><br><span class="line">    <span class="keyword">const</span> rules = getItemRules(validateRules, prop);</span><br><span class="line">    <span class="keyword">if</span> (rules) &#123;</span><br><span class="line">      <span class="keyword">const</span> validateRes = runValidator(curData, rules);</span><br><span class="line">      <span class="keyword">if</span> (!validateRes.flag) &#123;</span><br><span class="line">        <span class="keyword">return</span> &#123; <span class="attr">flag</span>: <span class="literal">false</span>, <span class="attr">name</span>: prop, <span class="attr">data</span>: curData, <span class="attr">message</span>: validateRes.message &#125;;</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> &#123; <span class="attr">flag</span>: <span class="literal">true</span> &#125;;</span><br><span class="line">  &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">let</span> i <span class="keyword">in</span> data) &#123;</span><br><span class="line">      <span class="keyword">const</span> rules = validateRules[i];</span><br><span class="line">      <span class="keyword">const</span> curData = data[i].toString().trim();</span><br><span class="line">      <span class="keyword">if</span> (rules) &#123;</span><br><span class="line">        <span class="keyword">const</span> validateRes = runValidator(curData, rules);</span><br><span class="line">        <span class="keyword">if</span> (!validateRes.flag) &#123;</span><br><span class="line">          <span class="keyword">return</span> &#123; <span class="attr">flag</span>: <span class="literal">false</span>, <span class="attr">name</span>: i, <span class="attr">data</span>: data[i], <span class="attr">message</span>: validateRes.message &#125;;</span><br><span class="line">        &#125;</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> &#123; <span class="attr">flag</span>: <span class="literal">true</span> &#125;;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="built_in">module</span>.exports = validateForm;</span><br></pre></td></tr></table></figure>
-
-<p>​</p>
-]]></content>
-      <categories>
-        <category>技术</category>
-        <category>前端</category>
-      </categories>
-      <tags>
-        <tag>JavaScript</tag>
-        <tag>表单</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>记一次对图片的处理</title>
-    <url>/2019/01/14/%E8%AE%B0%E4%B8%80%E6%AC%A1%E5%AF%B9%E5%9B%BE%E7%89%87%E7%9A%84%E5%A4%84%E7%90%86/</url>
+    <url>/Blog/2019/01/14/%E8%AE%B0%E4%B8%80%E6%AC%A1%E5%AF%B9%E5%9B%BE%E7%89%87%E7%9A%84%E5%A4%84%E7%90%86/</url>
     <content><![CDATA[<h1 id="vue-中对图片的处理"><a href="#vue-中对图片的处理" class="headerlink" title="vue 中对图片的处理"></a>vue 中对图片的处理</h1><blockquote>
 <p>工作上接触了一下图片的处理，图片的格式是文件流, 记录如下。</p>
 </blockquote>
@@ -925,7 +925,7 @@
   </entry>
   <entry>
     <title>金融大数高精度计算解决方案</title>
-    <url>/2019/09/28/%E9%87%91%E8%9E%8D%E5%A4%A7%E6%95%B0%E9%AB%98%E7%B2%BE%E5%BA%A6%E8%AE%A1%E7%AE%97%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/</url>
+    <url>/Blog/2019/09/28/%E9%87%91%E8%9E%8D%E5%A4%A7%E6%95%B0%E9%AB%98%E7%B2%BE%E5%BA%A6%E8%AE%A1%E7%AE%97%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/</url>
     <content><![CDATA[<h2 id="js-计算失误情况"><a href="#js-计算失误情况" class="headerlink" title="js 计算失误情况"></a>js 计算失误情况</h2><p>​ 在用 js 进行数值计算的时候，比如<code>0.1+0.2</code>时，会产生精度问题。另一方面，number 的计算范围有限，当 number 用来计算整数时，其范围为<code>-2^53 ~ 2^53</code>,为 16 位数。当数字超过 16 位数时，js 既不会报错，会造成的影响只是计算结果不准确；另外，当数字是小于 1 且小数点后面带有 6 个 0 以上的浮点数值或者整数位数字多于 21 位，js 会自动将数字转为科学计数法。</p>
 <p>​ 为了解决这种情况，我们可以使用以下方法：</p>
 <p>​ 1. 输入数字的时候尽量限制范围，防止用户输入过大不合理的数字</p>
@@ -962,7 +962,7 @@
   </entry>
   <entry>
     <title>说ES6的模块</title>
-    <url>/2019/04/04/%E8%AF%B4ES6%E7%9A%84%E6%A8%A1%E5%9D%97/</url>
+    <url>/Blog/2019/04/04/%E8%AF%B4ES6%E7%9A%84%E6%A8%A1%E5%9D%97/</url>
     <content><![CDATA[<h1 id="简明-ES6-模块"><a href="#简明-ES6-模块" class="headerlink" title="简明 ES6 模块"></a>简明 ES6 模块</h1><h2 id="1-什么是模块"><a href="#1-什么是模块" class="headerlink" title="1.什么是模块"></a>1.什么是模块</h2><p>模块就是一段代码，这段代码可以反复使用，经常单独写成一个文件,一旦加载会立即执行。</p>
 <h2 id="2-导出"><a href="#2-导出" class="headerlink" title="2.导出"></a>2.导出</h2><p>导出有 2 种方式：命名导出和默认导出，分别用关键字<code>export</code>和<code>export default</code>表示</p>
 <h3 id="2-1-命名导出-export-关键字"><a href="#2-1-命名导出-export-关键字" class="headerlink" title="2.1 命名导出:export 关键字"></a>2.1 命名导出:export 关键字</h3><ul>
